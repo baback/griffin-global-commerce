@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crowdfunding — Griffin Global Commerce</title>
+<meta name="description" content="Launch your product on Kickstarter or Indiegogo with Griffin Global Commerce. Strategy, creative, and fulfillment — end to end.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; background-color: #0A0A0A; color: #E8E8E3; overflow-x: hidden; }
+h1,h2,h3,h4,h5,h6,.serif-font { font-family: 'Newsreader', serif; }
+.word-wrapper { display: inline-block; overflow: hidden; vertical-align: top; margin-right: 0.25em; padding-bottom: 0.1em; }
+.word { display: inline-block; transform: translateY(110%); }
+</style>
+</head>
+<body class="antialiased selection:bg-[#E8E8E3] selection:text-[#0A0A0A]">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 bg-[#0A0A0A]/80 backdrop-blur-md border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="/" class="flex items-center gap-2">
+          <iconify-icon icon="solar:globe-linear" width="18" class="text-white/70" stroke-width="1.5"></iconify-icon>
+          <span class="text-sm font-medium tracking-widest uppercase text-white">Griffin Global Commerce</span>
+        </a>
+        <div class="flex items-center space-x-6">
+          <a href="/crowdfunding/" class="text-sm text-white hover:text-white transition-colors hidden md:block">Crowdfunding</a>
+          <a href="/services/" class="text-sm text-white/50 hover:text-white transition-colors hidden md:block">Services</a>
+          <a href="/about/" class="text-sm text-white/50 hover:text-white transition-colors hidden md:block">About</a>
+          <a href="/about/#contact" class="bg-white text-[#0A0A0A] px-5 py-2 rounded-full text-xs font-medium tracking-wide hover:bg-white/90 transition-all flex items-center gap-2 group">
+            Get in Touch
+            <iconify-icon icon="solar:arrow-right-linear" class="group-hover:translate-x-0.5 transition-transform" stroke-width="1.5"></iconify-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <main class="pt-36 pb-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+    <p class="text-xs uppercase tracking-widest text-white/30 mb-4">Crowdfunding Services</p>
+    <h1 class="reveal-text text-4xl md:text-6xl serif-font leading-[1.1] font-light tracking-tight mb-6 text-white">Launch your product with a campaign that delivers.</h1>
+    <p class="text-base text-white/40 max-w-2xl leading-relaxed font-light mb-10">
+      We manage every aspect of your crowdfunding campaign — from pre-launch strategy to post-campaign fulfillment. Kickstarter, Indiegogo, or both.
+    </p>
+  </main>
+
+  <!-- Hero Image -->
+  <section class="px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto mb-24">
+    <div class="rounded-2xl overflow-hidden relative h-[350px] md:h-[450px]">
+      <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1200&auto=format&fit=crop&q=80" class="w-full h-full object-cover" alt="Crowdfunding campaign">
+      <div class="absolute inset-0 bg-black/50"></div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-20 px-4 max-w-5xl mx-auto">
+    <p class="text-xs uppercase tracking-widest text-white/30 mb-4">How It Works</p>
+    <h2 class="reveal-text serif-font text-3xl md:text-4xl text-white tracking-tight mb-16">From idea to funded in four phases.</h2>
+
+    <div class="grid md:grid-cols-2 gap-x-16 gap-y-12">
+      <div class="border-l border-white/10 pl-6">
+        <span class="text-xs text-white/20 font-medium">01</span>
+        <h3 class="serif-font text-xl text-white mt-2 mb-2">Discovery & Research</h3>
+        <p class="text-sm text-white/40 font-light leading-relaxed">We analyze your product, market, and competition to build a campaign strategy grounded in real data. No guesswork.</p>
+      </div>
+      <div class="border-l border-white/10 pl-6">
+        <span class="text-xs text-white/20 font-medium">02</span>
+        <h3 class="serif-font text-xl text-white mt-2 mb-2">Campaign Creation</h3>
+        <p class="text-sm text-white/40 font-light leading-relaxed">Page design, video direction, reward structuring, and messaging — we build the campaign assets that convert backers.</p>
+      </div>
+      <div class="border-l border-white/10 pl-6">
+        <span class="text-xs text-white/20 font-medium">03</span>
+        <h3 class="serif-font text-xl text-white mt-2 mb-2">Launch & Promotion</h3>
+        <p class="text-sm text-white/40 font-light leading-relaxed">Paid media, PR outreach, community engagement, and backer communication throughout the live campaign period.</p>
+      </div>
+      <div class="border-l border-white/10 pl-6">
+        <span class="text-xs text-white/20 font-medium">04</span>
+        <h3 class="serif-font text-xl text-white mt-2 mb-2">Fulfillment & Transition</h3>
+        <p class="text-sm text-white/40 font-light leading-relaxed">Post-campaign logistics, backer updates, and a smooth transition into e-commerce so the momentum doesn't stop.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platforms -->
+  <section class="py-20 px-4 max-w-5xl mx-auto border-t border-white/5">
+    <p class="text-xs uppercase tracking-widest text-white/30 mb-4">Platforms</p>
+    <h2 class="reveal-text serif-font text-3xl text-white tracking-tight mb-12">Where we launch.</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-[#111111] rounded-2xl p-8 border border-white/5">
+        <div class="flex items-center gap-3 mb-4">
+          <iconify-icon icon="simple-icons:kickstarter" width="24" class="text-white/60"></iconify-icon>
+          <h3 class="serif-font text-xl text-white">Kickstarter</h3>
+        </div>
+        <p class="text-sm text-white/40 font-light leading-relaxed">The world's largest creative funding platform. Ideal for design, tech, and consumer products with a strong story to tell.</p>
+      </div>
+      <div class="bg-[#111111] rounded-2xl p-8 border border-white/5">
+        <div class="flex items-center gap-3 mb-4">
+          <iconify-icon icon="simple-icons:indiegogo" width="24" class="text-white/60"></iconify-icon>
+          <h3 class="serif-font text-xl text-white">Indiegogo</h3>
+        </div>
+        <p class="text-sm text-white/40 font-light leading-relaxed">Flexible funding with InDemand post-campaign sales. Great for products that want to keep selling after the campaign ends.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- What You Get -->
+  <section class="py-20 px-4 max-w-5xl mx-auto border-t border-white/5">
+    <p class="text-xs uppercase tracking-widest text-white/30 mb-4">What's Included</p>
+    <h2 class="reveal-text serif-font text-3xl text-white tracking-tight mb-12">Full-service campaign management.</h2>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="flex items-start gap-3 py-4 border-b border-white/5">
+        <iconify-icon icon="solar:check-read-linear" class="text-white/40 mt-0.5" stroke-width="1.5"></iconify-icon>
+        <span class="text-sm text-white/60 font-light">Market research & competitive analysis</span>
+      </div>
+      <div class="flex items-start gap-3 py-4 border-b border-white/5">
+        <iconify-icon icon="solar:check-read-linear" class="text-white/40 mt-0.5" stroke-width="1.5"></iconify-icon>
+        <span class="text-sm text-white/60 font-light">Campaign page copywriting & design</span>
+      </div>
+      <div class="flex items-start gap-3 py-4 border-b border-white/5">
+        <iconify-icon icon="solar:check-read-linear" class="text-white/40 mt-0.5" stroke-width="1.5"></iconify-icon>
+        <span class="text-sm text-white/60 font-light">Video strategy & creative direction</span>
+      </div>
+      <div class="flex items-start gap-3 py-4 border-b border-white/5">
+        <iconify-icon icon="solar:check-read-linear" class="text-white/40 mt-0.5" stroke-width="1.5"></iconify-icon>
+        <span class="text-sm text-white/60 font-light">Reward tier structuring & pricing</span>
+      </div>
+      <div class="flex items-start gap-3 py-4 border-b border-white/5">
+        <iconify-icon icon="solar:check-read-linear" class="text-white/40 mt-0.5" stroke-width="1.5"></iconify-icon>
+        <span class="text-sm text-white/60 font-light">Paid advertising & PR outreach</span>
+      </div>
+      <div class="flex items-start gap-3 py-4 border-b border-white/5">
+        <iconify-icon icon="solar:check-read-linear" class="text-white/40 mt-0.5" stroke-width="1.5"></iconify-icon>
+        <span class="text-sm text-white/60 font-light">Backer communication & community management</span>
+      </div>
+      <div class="flex items-start gap-3 py-4 border-b border-white/5">
+        <iconify-icon icon="solar:check-read-linear" class="text-white/40 mt-0.5" stroke-width="1.5"></iconify-icon>
+        <span class="text-sm text-white/60 font-light">Fulfillment planning & logistics</span>
+      </div>
+      <div class="flex items-start gap-3 py-4 border-b border-white/5">
+        <iconify-icon icon="solar:check-read-linear" class="text-white/40 mt-0.5" stroke-width="1.5"></iconify-icon>
+        <span class="text-sm text-white/60 font-light">Post-campaign e-commerce transition</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-24 px-4 max-w-3xl mx-auto text-center border-t border-white/5">
+    <h2 class="reveal-text serif-font text-3xl md:text-4xl text-white tracking-tight mb-4">Have a product to launch?</h2>
+    <p class="text-sm text-white/40 font-light mb-10 max-w-md mx-auto">Tell us about your project and we'll put together a plan.</p>
+    <a href="/about/#contact" class="bg-white text-[#0A0A0A] px-8 py-3 rounded-full text-sm font-medium hover:bg-white/90 transition-all inline-flex items-center gap-2 group">
+      Let's Talk
+      <iconify-icon icon="solar:arrow-right-linear" class="group-hover:translate-x-0.5 transition-transform" stroke-width="1.5"></iconify-icon>
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="overflow-hidden bg-[#050505] text-[#E8E8E3] pt-24 pb-0 relative border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+      <div class="grid md:grid-cols-4 gap-12 mb-24">
+        <div class="md:col-span-1">
+          <p class="text-xs font-bold uppercase tracking-widest mb-6 text-white/30">Griffin Global Commerce</p>
+          <p class="text-3xl font-serif mb-6 leading-tight tracking-tight text-white">Turning visionary concepts into thriving global businesses.</p>
+          <div class="flex gap-4">
+            <a href="/about/#contact" class="text-xs font-medium bg-white text-[#0A0A0A] px-5 py-2.5 rounded-full hover:bg-white/90 transition-colors">Contact Us</a>
+          </div>
+        </div>
+        <div class="md:col-span-1">
+          <p class="text-xs font-bold uppercase tracking-widest mb-6 text-white/30">Get In Touch</p>
+          <a href="mailto:info@griffinglobalcommerce.com" class="block text-lg font-serif mb-2 hover:opacity-70 transition-opacity tracking-tight text-white">info@griffinglobalcommerce.com</a>
+          <p class="text-sm text-white/40 mb-6">(778) 877-7274</p>
+          <p class="text-[10px] text-white/30 leading-relaxed">Headquarters in North Vancouver<br>British Columbia</p>
+        </div>
+        <div class="md:col-span-2 flex flex-col md:flex-row justify-end gap-12 md:gap-24 text-sm font-medium">
+          <div class="flex flex-col gap-4">
+            <span class="text-xs font-bold uppercase tracking-widest text-white/30 mb-2">Pages</span>
+            <a href="/crowdfunding/" class="text-white/70 hover:text-white transition-colors">Crowdfunding</a>
+            <a href="/services/" class="text-white/70 hover:text-white transition-colors">Services</a>
+            <a href="/about/" class="text-white/70 hover:text-white transition-colors">About</a>
+          </div>
+          <div class="flex flex-col gap-4">
+            <span class="text-xs font-bold uppercase tracking-widest text-white/30 mb-2">Connect</span>
+            <a href="https://www.linkedin.com/company/griffin-global-commerce-ltd/" target="_blank" class="text-white/70 hover:text-white transition-colors">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full text-center leading-none overflow-hidden border-t border-white/5">
+      <h1 class="text-[18vw] leading-[0.75] font-serif text-white/[0.03] tracking-tighter select-none pointer-events-none -mb-[0.05em] pt-4">Griffin</h1>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.registerPlugin(ScrollTrigger);
+      document.querySelectorAll(".reveal-text").forEach(el => {
+        const words = el.innerText.split(" ");
+        el.innerHTML = words.map(w => `<span class="word-wrapper"><span class="word">${w}</span></span> `).join("");
+      });
+      document.querySelectorAll(".reveal-text").forEach(el => {
+        gsap.to(el.querySelectorAll(".word"), {
+          scrollTrigger: { trigger: el, start: "top 85%", toggleActions: "play none none reverse" },
+          y: 0, duration: 1.2, ease: "power4.out", stagger: 0.04
+        });
+      });
+    });
+  </script>
+</body>
+</html>
