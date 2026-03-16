@@ -13,10 +13,10 @@ tailwind.config={theme:{extend:{colors:{navy:{950:'#060B18',900:'#0B1120',800:'#
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-body{font-family:'Inter',sans-serif;background:#060B18;color:#CBD5E1;overflow-x:hidden}
-h1,h2,h3,h4,h5,h6,.display-font{font-family:'Playfair Display',serif}
+body{font-family:'Inter',sans-serif;background:#060B18;color:#E2E8F0;overflow-x:hidden}
+h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
 .gold-line{width:40px;height:2px;background:linear-gradient(90deg,#D4A843,#F6D365)}
 .card-glow:hover{box-shadow:0 0 40px rgba(212,168,67,0.06)}
 .step-num{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,#D4A843,#F6D365);color:#060B18;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
@@ -32,8 +32,8 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'Playfair Display',serif}
         <img src="/src/logo.webp" alt="Griffin Global Commerce" class="h-8">
       </a>
       <div class="flex items-center gap-8">
-        <a href="/services/" class="text-[13px] text-white/50 hover:text-gold-400 transition-colors hidden md:block font-medium">Services</a>
-        <a href="/about/" class="text-[13px] text-white/50 hover:text-gold-400 transition-colors hidden md:block font-medium">About</a>
+        <a href="/services/" class="text-[13px] text-white/70 hover:text-gold-400 transition-colors hidden md:block font-medium">Services</a>
+        <a href="/about/" class="text-[13px] text-white/70 hover:text-gold-400 transition-colors hidden md:block font-medium">About</a>
         <a href="/about/#contact" class="bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 px-6 py-2.5 rounded text-xs font-bold tracking-wider uppercase hover:from-gold-400 hover:to-gold-500 transition-all shadow-lg shadow-gold-500/10">Contact Us</a>
       </div>
     </div>
@@ -48,7 +48,7 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'Playfair Display',serif}
       <div class="gold-line mb-8"></div>
       <p class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase mb-6">Premium Canadian E-Commerce</p>
       <h1 class="display-font text-5xl md:text-7xl font-medium text-white leading-[1.05] tracking-tight mb-8">Connecting Entrepreneurs to Capital &amp; <span class="text-gold-400">Global Markets.</span></h1>
-      <p class="text-lg text-white/40 leading-relaxed max-w-xl mb-12 font-light">We help businesses raise capital through crowdfunding, launch high-performing e-commerce stores, and expand into international markets — all under one roof.</p>
+      <p class="text-lg text-white/60 leading-relaxed max-w-xl mb-12 font-light">We help businesses raise capital through crowdfunding, launch high-performing e-commerce stores, and expand into international markets — all under one roof.</p>
       <div class="flex flex-wrap gap-4">
         <a href="/about/#contact" class="bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 px-8 py-4 rounded text-sm font-bold tracking-wider uppercase hover:from-gold-400 hover:to-gold-500 transition-all shadow-xl shadow-gold-500/15">Get Started</a>
         <a href="/about/" class="border border-white/10 text-white/60 px-8 py-4 rounded text-sm font-medium tracking-wider uppercase hover:border-gold-500/30 hover:text-gold-400 transition-all">Learn More</a>
@@ -80,26 +80,27 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'Playfair Display',serif}
       <h2 class="display-font text-3xl md:text-5xl text-white tracking-tight">Three pillars of growth.</h2>
     </div>
     <div class="grid md:grid-cols-3 gap-px bg-white/5 rounded-xl overflow-hidden">
-      <div class="bg-navy-900 p-10 card-glow transition-all">
+      <div class="bg-navy-800 p-10 card-glow transition-all border-t-2 border-gold-500">
         <div class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-6 text-gold-500">
           <iconify-icon icon="solar:rocket-2-bold" width="24"></iconify-icon>
         </div>
+        <p class="text-gold-500 text-[10px] font-bold tracking-[0.25em] uppercase mb-2">Core Service</p>
         <h3 class="text-xl font-bold text-white mb-3">Crowdfunding Campaigns</h3>
-        <p class="text-sm text-white/40 leading-relaxed">We help businesses raise capital through Kickstarter, Indiegogo, and other platforms. From strategy to fulfillment, we manage the entire campaign lifecycle.</p>
+        <p class="text-sm text-white/60 leading-relaxed">We help businesses raise capital through Kickstarter, Indiegogo, and other platforms. From strategy to fulfillment, we manage the entire campaign lifecycle.</p>
       </div>
       <div class="bg-navy-900 p-10 card-glow transition-all">
         <div class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-6 text-gold-500">
           <iconify-icon icon="solar:cart-large-2-bold" width="24"></iconify-icon>
         </div>
         <h3 class="text-xl font-bold text-white mb-3">E-Commerce Launch</h3>
-        <p class="text-sm text-white/40 leading-relaxed">From Amazon to Shopify, we build and manage high-performing online stores. Product listings, brand identity, and conversion optimization — all handled.</p>
+        <p class="text-sm text-white/60 leading-relaxed">From Amazon to Shopify, we build and manage high-performing online stores. Product listings, brand identity, and conversion optimization — all handled.</p>
       </div>
       <div class="bg-navy-900 p-10 card-glow transition-all">
         <div class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-6 text-gold-500">
           <iconify-icon icon="solar:global-bold" width="24"></iconify-icon>
         </div>
         <h3 class="text-xl font-bold text-white mb-3">International Trade</h3>
-        <p class="text-sm text-white/40 leading-relaxed">Supply chain management, customs compliance, and multi-market distribution. We handle the complexity so you can focus on your product.</p>
+        <p class="text-sm text-white/60 leading-relaxed">Supply chain management, customs compliance, and multi-market distribution. We handle the complexity so you can focus on your product.</p>
       </div>
     </div>
   </div>
@@ -122,21 +123,21 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'Playfair Display',serif}
           <iconify-icon icon="solar:layers-bold" width="24"></iconify-icon>
         </div>
         <h3 class="text-xl font-bold text-white mb-3">Diverse Projects</h3>
-        <p class="text-sm text-white/40 leading-relaxed">We work across industries — consumer products, health &amp; wellness, tech, food &amp; agriculture, and more. Whatever your sector, we have the expertise to help you grow.</p>
+        <p class="text-sm text-white/60 leading-relaxed">We work across industries — consumer products, health &amp; wellness, tech, food &amp; agriculture, and more. Whatever your sector, we have the expertise to help you grow.</p>
       </div>
       <div class="bg-navy-800 rounded-xl p-10 border border-white/5 card-glow transition-all">
         <div class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-6 text-gold-500">
           <iconify-icon icon="solar:shield-check-bold" width="24"></iconify-icon>
         </div>
         <h3 class="text-xl font-bold text-white mb-3">Rigorous &amp; Transparent</h3>
-        <p class="text-sm text-white/40 leading-relaxed">Every project goes through thorough evaluation by our expert team before we take it on. We only commit to ventures we believe in, and we keep you informed every step of the way.</p>
+        <p class="text-sm text-white/60 leading-relaxed">Every project goes through thorough evaluation by our expert team before we take it on. We only commit to ventures we believe in, and we keep you informed every step of the way.</p>
       </div>
       <div class="bg-navy-800 rounded-xl p-10 border border-white/5 card-glow transition-all">
         <div class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-6 text-gold-500">
           <iconify-icon icon="solar:chart-2-bold" width="24"></iconify-icon>
         </div>
         <h3 class="text-xl font-bold text-white mb-3">Proven Results</h3>
-        <p class="text-sm text-white/40 leading-relaxed">Our track record of successful crowdfunding campaigns and profitable e-commerce launches speaks for itself. We're invested in your outcome.</p>
+        <p class="text-sm text-white/60 leading-relaxed">Our track record of successful crowdfunding campaigns and profitable e-commerce launches speaks for itself. We're invested in your outcome.</p>
       </div>
     </div>
   </div>
@@ -155,56 +156,56 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'Playfair Display',serif}
         <div class="step-num">01</div>
         <div>
           <h4 class="text-white font-semibold mb-1">Discovery Call</h4>
-          <p class="text-sm text-white/40 leading-relaxed">Tell us about your product or business idea. We'll listen, ask the right questions, and understand your goals.</p>
+          <p class="text-sm text-white/60 leading-relaxed">Tell us about your product or business idea. We'll listen, ask the right questions, and understand your goals.</p>
         </div>
       </div>
       <div class="flex gap-5 py-8 border-b border-white/5">
         <div class="step-num">02</div>
         <div>
           <h4 class="text-white font-semibold mb-1">Market Assessment</h4>
-          <p class="text-sm text-white/40 leading-relaxed">We evaluate market fit, competition, and opportunity to determine the best path forward for your venture.</p>
+          <p class="text-sm text-white/60 leading-relaxed">We evaluate market fit, competition, and opportunity to determine the best path forward for your venture.</p>
         </div>
       </div>
       <div class="flex gap-5 py-8 border-b border-white/5">
         <div class="step-num">03</div>
         <div>
           <h4 class="text-white font-semibold mb-1">Strategy &amp; Planning</h4>
-          <p class="text-sm text-white/40 leading-relaxed">We build a custom roadmap — whether it's crowdfunding, e-commerce, international expansion, or all three.</p>
+          <p class="text-sm text-white/60 leading-relaxed">We build a custom roadmap — whether it's crowdfunding, e-commerce, international expansion, or all three.</p>
         </div>
       </div>
       <div class="flex gap-5 py-8 border-b border-white/5">
         <div class="step-num">04</div>
         <div>
           <h4 class="text-white font-semibold mb-1">Campaign / Store Build</h4>
-          <p class="text-sm text-white/40 leading-relaxed">We create and launch your crowdfunding campaign or e-commerce storefront with professional creative and copy.</p>
+          <p class="text-sm text-white/60 leading-relaxed">We create and launch your crowdfunding campaign or e-commerce storefront with professional creative and copy.</p>
         </div>
       </div>
       <div class="flex gap-5 py-8 border-b border-white/5">
         <div class="step-num">05</div>
         <div>
           <h4 class="text-white font-semibold mb-1">Marketing &amp; Growth</h4>
-          <p class="text-sm text-white/40 leading-relaxed">Paid media, PR outreach, community building, and backer/customer engagement to drive traction.</p>
+          <p class="text-sm text-white/60 leading-relaxed">Paid media, PR outreach, community building, and backer/customer engagement to drive traction.</p>
         </div>
       </div>
       <div class="flex gap-5 py-8 border-b border-white/5">
         <div class="step-num">06</div>
         <div>
           <h4 class="text-white font-semibold mb-1">Fulfillment &amp; Logistics</h4>
-          <p class="text-sm text-white/40 leading-relaxed">Order management, shipping, customs, and international distribution handled end to end.</p>
+          <p class="text-sm text-white/60 leading-relaxed">Order management, shipping, customs, and international distribution handled end to end.</p>
         </div>
       </div>
       <div class="flex gap-5 py-8 border-b border-white/5">
         <div class="step-num">07</div>
         <div>
           <h4 class="text-white font-semibold mb-1">Ongoing Optimization</h4>
-          <p class="text-sm text-white/40 leading-relaxed">Continuous improvement — conversion optimization, new market entry, product line expansion.</p>
+          <p class="text-sm text-white/60 leading-relaxed">Continuous improvement — conversion optimization, new market entry, product line expansion.</p>
         </div>
       </div>
       <div class="flex gap-5 py-8 border-b border-white/5">
         <div class="step-num">08</div>
         <div>
           <h4 class="text-white font-semibold mb-1">Reporting &amp; Returns</h4>
-          <p class="text-sm text-white/40 leading-relaxed">Transparent reporting on campaign performance, revenue, and growth metrics. You always know where you stand.</p>
+          <p class="text-sm text-white/60 leading-relaxed">Transparent reporting on campaign performance, revenue, and growth metrics. You always know where you stand.</p>
         </div>
       </div>
     </div>
@@ -219,7 +220,7 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'Playfair Display',serif}
       <div class="relative z-10">
         <p class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase mb-4">Get Started</p>
         <h2 class="display-font text-3xl md:text-5xl text-white tracking-tight mb-6">Ready to launch your next venture?</h2>
-        <p class="text-white/40 max-w-md mx-auto mb-10 text-sm leading-relaxed">Whether you're raising capital, launching online, or expanding globally — we'd like to hear from you.</p>
+        <p class="text-white/60 max-w-md mx-auto mb-10 text-sm leading-relaxed">Whether you're raising capital, launching online, or expanding globally — we'd like to hear from you.</p>
         <a href="/about/#contact" class="bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 px-10 py-4 rounded text-sm font-bold tracking-wider uppercase hover:from-gold-400 hover:to-gold-500 transition-all shadow-xl shadow-gold-500/15 inline-block">Contact Us Today</a>
       </div>
     </div>
@@ -232,34 +233,34 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'Playfair Display',serif}
     <div class="grid md:grid-cols-4 gap-12 mb-16">
       <div class="md:col-span-1">
         <img src="/src/logo.webp" alt="Griffin Global Commerce" class="h-8 mb-6">
-        <p class="text-sm text-white/30 leading-relaxed mb-6">A proud Canadian company helping businesses raise capital, launch online, and expand globally.</p>
+        <p class="text-sm text-white/50 leading-relaxed mb-6">A proud Canadian company helping businesses raise capital, launch online, and expand globally.</p>
       </div>
       <div>
         <p class="text-xs font-bold tracking-[0.2em] uppercase text-gold-500/50 mb-6">Pages</p>
         <div class="flex flex-col gap-3">
-          <a href="/" class="text-sm text-white/50 hover:text-gold-400 transition-colors">Home</a>
-          <a href="/services/" class="text-sm text-white/50 hover:text-gold-400 transition-colors">Services</a>
-          <a href="/about/" class="text-sm text-white/50 hover:text-gold-400 transition-colors">About</a>
-          <a href="/about/#contact" class="text-sm text-white/50 hover:text-gold-400 transition-colors">Contact</a>
+          <a href="/" class="text-sm text-white/70 hover:text-gold-400 transition-colors">Home</a>
+          <a href="/services/" class="text-sm text-white/70 hover:text-gold-400 transition-colors">Services</a>
+          <a href="/about/" class="text-sm text-white/70 hover:text-gold-400 transition-colors">About</a>
+          <a href="/about/#contact" class="text-sm text-white/70 hover:text-gold-400 transition-colors">Contact</a>
         </div>
       </div>
       <div>
         <p class="text-xs font-bold tracking-[0.2em] uppercase text-gold-500/50 mb-6">Connect</p>
         <div class="flex flex-col gap-3">
-          <a href="https://www.linkedin.com/company/griffin-global-commerce-ltd/" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-gold-400 transition-colors">LinkedIn</a>
-          <a href="https://www.grifglo.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-gold-400 transition-colors">grifglo.com</a>
+          <a href="https://www.linkedin.com/company/griffin-global-commerce-ltd/" target="_blank" rel="noopener" class="text-sm text-white/70 hover:text-gold-400 transition-colors">LinkedIn</a>
+          <a href="https://www.grifglo.com" target="_blank" rel="noopener" class="text-sm text-white/70 hover:text-gold-400 transition-colors">grifglo.com</a>
         </div>
       </div>
       <div>
         <p class="text-xs font-bold tracking-[0.2em] uppercase text-gold-500/50 mb-6">Contact</p>
-        <a href="mailto:info@grifglo.com" class="text-sm text-white/50 hover:text-gold-400 transition-colors block mb-2">info@grifglo.com</a>
-        <p class="text-sm text-white/30 mb-2">(778) 877-7274</p>
-        <p class="text-xs text-white/20 leading-relaxed">230-2030 Marine Dr<br>North Vancouver, BC V7P 1V7<br>Canada</p>
+        <a href="mailto:info@grifglo.com" class="text-sm text-white/70 hover:text-gold-400 transition-colors block mb-2">info@grifglo.com</a>
+        <p class="text-sm text-white/50 mb-2">(778) 877-7274</p>
+        <p class="text-xs text-white/40 leading-relaxed">230-2030 Marine Dr<br>North Vancouver, BC V7P 1V7<br>Canada</p>
       </div>
     </div>
     <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-      <p class="text-xs text-white/20">&copy; 2025 Griffin Global Commerce Ltd. All rights reserved.</p>
-      <p class="text-xs text-white/20">North Vancouver, British Columbia, Canada</p>
+      <p class="text-xs text-white/40">&copy; 2025 Griffin Global Commerce Ltd. All rights reserved.</p>
+      <p class="text-xs text-white/40">North Vancouver, British Columbia, Canada</p>
     </div>
   </div>
 </footer>
