@@ -10,8 +10,7 @@
 tailwind.config={theme:{extend:{colors:{navy:{950:'#060B18',900:'#0B1120',800:'#111B33',700:'#172345'},gold:{300:'#FBDF8B',400:'#F6D365',500:'#D4A843',600:'#B8922E'}}}}}
 </script>
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -29,7 +28,7 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'Playfair Display',serif}
   <div class="max-w-7xl mx-auto px-6 lg:px-8">
     <div class="flex justify-between items-center h-[72px]">
       <a href="/" class="flex items-center gap-3">
-        <img src="/src/logo.webp" alt="Griffin Global Commerce" class="h-5">
+        <img src="/src/logo.webp" alt="Griffin Global Commerce" class="h-8">
       </a>
       <div class="flex items-center gap-8">
         <a href="/services/" class="text-[13px] text-white hover:text-gold-400 transition-colors hidden md:block font-medium">Services</a>
@@ -209,7 +208,7 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'Playfair Display',serif}
   <div class="max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-12">
     <div class="grid md:grid-cols-4 gap-12 mb-16">
       <div class="md:col-span-1">
-        <img src="/src/logo.webp" alt="Griffin Global Commerce" class="h-5 mb-6">
+        <img src="/src/logo.webp" alt="Griffin Global Commerce" class="h-8 mb-6">
         <p class="text-sm text-white/30 leading-relaxed mb-6">A proud Canadian company helping businesses raise capital, launch online, and expand globally.</p>
       </div>
       <div>
@@ -242,13 +241,6 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'Playfair Display',serif}
   </div>
 </footer>
 
-<script>
-document.addEventListener("DOMContentLoaded",()=>{
-  gsap.registerPlugin(ScrollTrigger);
-  gsap.utils.toArray("section").forEach(s=>{
-    gsap.from(s.children,{scrollTrigger:{trigger:s,start:"top 85%",toggleActions:"play none none none"},y:40,opacity:0,duration:0.8,ease:"power3.out",stagger:0.1});
-  });
-});
-</script>
+
 </body>
 </html>
