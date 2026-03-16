@@ -4,20 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Services — Griffin Global Commerce</title>
-<meta name="description" content="E-commerce, crowdfunding, and international trade services from Griffin Global Commerce.">
+<meta name="description" content="Services built around growth, capital, and opportunity. We support businesses through strategic development, capital-oriented thinking, and practical commercial execution.">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
-tailwind.config={theme:{extend:{colors:{navy:{950:'#060B18',900:'#0B1120',800:'#111B33',700:'#172345'},gold:{300:'#FBDF8B',400:'#F6D365',500:'#D4A843',600:'#B8922E'}}}}}
+tailwind.config={theme:{extend:{colors:{navy:{950:'#060B18',900:'#0B1120',800:'#111B33',700:'#172345'},gold:{300:'#D4B85C',400:'#C9A84C',500:'#B8923A',600:'#8B6914'}}}}}
 </script>
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 body{font-family:'Inter',sans-serif;background:#060B18;color:#E2E8F0;overflow-x:hidden}
 h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
-.gold-line{width:40px;height:2px;background:linear-gradient(90deg,#D4A843,#F6D365)}
+.gold-line{width:40px;height:2px;background:linear-gradient(90deg,#B8923A,#C9A84C)}
 .card-glow:hover{box-shadow:0 0 40px rgba(212,168,67,0.06)}
 </style>
 </head>
@@ -30,174 +29,143 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
       <a href="/" class="flex items-center gap-3">
         <img src="/src/logo.webp" alt="Griffin Global Commerce" class="h-8">
       </a>
-      <div class="flex items-center gap-8">
-        <a href="/services/" class="text-[13px] text-white hover:text-gold-400 transition-colors hidden md:block font-medium">Services</a>
-        <a href="/about/" class="text-[13px] text-white/90 hover:text-gold-400 transition-colors hidden md:block font-medium">About</a>
-        <a href="/about/#contact" class="bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 px-6 py-2.5 rounded text-xs font-bold tracking-wider uppercase hover:from-gold-400 hover:to-gold-500 transition-all shadow-lg shadow-gold-500/10">Contact Us</a>
+      <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="md:hidden text-white/90" aria-label="Toggle navigation menu">
+        <iconify-icon icon="solar:hamburger-menu-linear" width="24"></iconify-icon>
+      </button>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="/services/" class="text-[13px] text-white hover:text-gold-400 transition-colors font-medium">Services</a>
+        <a href="/about/" class="text-[13px] text-white/90 hover:text-gold-400 transition-colors font-medium">About</a>
+        <a href="/investors/" class="text-[13px] text-white/90 hover:text-gold-400 transition-colors font-medium">For Investors</a>
+        <a href="/contact/" class="bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 px-6 py-2.5 rounded text-xs font-bold tracking-wider uppercase hover:from-gold-400 hover:to-gold-500 transition-all shadow-lg shadow-gold-500/10">Contact Us</a>
       </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden pb-6 space-y-4">
+      <a href="/services/" class="block text-sm text-white/90 hover:text-gold-400">Services</a>
+      <a href="/about/" class="block text-sm text-white/90 hover:text-gold-400">About</a>
+      <a href="/investors/" class="block text-sm text-white/90 hover:text-gold-400">For Investors</a>
+      <a href="/contact/" class="block text-sm text-white/90 hover:text-gold-400">Contact</a>
     </div>
   </div>
 </nav>
 
-<!-- Hero -->
+<!-- Section 1: Services Hero -->
 <section class="pt-[160px] pb-20 px-6 lg:px-8 relative overflow-hidden">
   <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-gold-500/[0.03] rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3"></div>
   <div class="max-w-7xl mx-auto relative z-10">
     <div class="max-w-3xl">
       <div class="gold-line mb-8"></div>
       <p class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase mb-6">Our Services</p>
-      <h1 class="display-font text-4xl md:text-6xl font-medium text-white leading-[1.1] tracking-tight mb-8">Integrated solutions for <span class="text-gold-400">global growth.</span></h1>
-      <p class="text-lg text-white/90 leading-relaxed max-w-xl font-light">From e-commerce operations and crowdfunding campaigns to international trade — we provide end-to-end solutions that scale your business.</p>
+      <h1 class="display-font text-4xl md:text-6xl font-medium text-white leading-[1.1] tracking-tight mb-8">Services built around growth, capital, and <span class="text-gold-400">opportunity.</span></h1>
+      <p class="text-lg text-white/90 leading-relaxed max-w-xl font-light">We support businesses and opportunities through strategic development, capital-oriented thinking, and practical commercial execution.</p>
     </div>
   </div>
 </section>
 
-<!-- Crowdfunding — Core Service -->
-<section class="px-6 lg:px-8 pb-32">
+<!-- Service 1: Business Development & Growth Strategy -->
+<section class="px-6 lg:px-8 pb-20">
   <div class="max-w-7xl mx-auto">
     <div class="grid md:grid-cols-2 gap-px bg-white/5 rounded-xl overflow-hidden border border-gold-500/10">
-      <div class="relative h-[350px] md:h-auto">
-        <img src="https://images.unsplash.com/photo-1567449303055-2cd2ef5c4e74?w=800&auto=format&fit=crop&q=80" class="w-full h-full object-cover" alt="Crowdfunding campaigns">
+      <div class="relative h-[300px] md:h-auto">
+        <img src="https://images.unsplash.com/photo-1606836591695-4d58a73eba1e?w=800&auto=format&fit=crop&q=80" class="w-full h-full object-cover" alt="Business development and growth strategy">
         <div class="absolute inset-0 bg-navy-950/60"></div>
       </div>
       <div class="bg-navy-800 p-12 md:p-16 flex flex-col justify-center">
         <div class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-8 text-gold-500">
-          <iconify-icon icon="solar:hand-money-bold" width="24"></iconify-icon>
+          <iconify-icon icon="solar:chart-2-bold" width="24"></iconify-icon>
         </div>
-        <p class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase mb-3">Core Service</p>
-        <h2 class="display-font text-3xl text-white tracking-tight mb-4">Crowdfunding Campaigns</h2>
-        <p class="text-sm text-white/90 leading-relaxed mb-6">We help brands launch and manage successful crowdfunding campaigns. From strategy and creative development to backer communication and post-campaign fulfillment, we guide you through every stage of bringing your product to market.</p>
-        <ul class="space-y-3">
-          <li class="flex items-center gap-3 text-sm text-white/90"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500 shrink-0" width="16"></iconify-icon>Campaign strategy &amp; planning</li>
-          <li class="flex items-center gap-3 text-sm text-white/90"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500 shrink-0" width="16"></iconify-icon>Creative content &amp; page design</li>
-          <li class="flex items-center gap-3 text-sm text-white/90"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500 shrink-0" width="16"></iconify-icon>Video production guidance</li>
-          <li class="flex items-center gap-3 text-sm text-white/90"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500 shrink-0" width="16"></iconify-icon>Backer engagement &amp; community</li>
-          <li class="flex items-center gap-3 text-sm text-white/90"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500 shrink-0" width="16"></iconify-icon>Post-campaign fulfillment transition</li>
-        </ul>
+        <p class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase mb-3">Service 01</p>
+        <h2 class="display-font text-3xl text-white tracking-tight mb-4">Business Development &amp; Growth Strategy</h2>
+        <p class="text-sm text-white/90 leading-relaxed">We work with businesses that are looking to strengthen their position, explore expansion, improve market readiness, refine their commercial direction, or prepare for their next phase of growth.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- E-Commerce -->
+<!-- Service 2: Crowdfunding & Capital Readiness -->
+<section class="px-6 lg:px-8 pb-20">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-px bg-white/5 rounded-xl overflow-hidden">
+      <div class="bg-navy-800 p-12 md:p-16 flex flex-col justify-center order-2 md:order-1">
+        <div class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-8 text-gold-500">
+          <iconify-icon icon="solar:hand-money-bold" width="24"></iconify-icon>
+        </div>
+        <p class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase mb-3">Service 02</p>
+        <h2 class="display-font text-3xl text-white tracking-tight mb-4">Crowdfunding &amp; Capital Readiness</h2>
+        <p class="text-sm text-white/90 leading-relaxed">We support businesses that are preparing for crowdfunding, outside capital, or investor engagement. Our focus is on helping opportunities become more structured, more credible, and better prepared for serious discussions.</p>
+      </div>
+      <div class="relative h-[300px] md:h-auto order-1 md:order-2">
+        <img src="https://images.unsplash.com/photo-1567449303055-2cd2ef5c4e74?w=800&auto=format&fit=crop&q=80" class="w-full h-full object-cover" alt="Crowdfunding and capital readiness">
+        <div class="absolute inset-0 bg-navy-950/60"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Service 3: Investment Opportunity Review & Participation -->
+<section class="px-6 lg:px-8 pb-20">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-px bg-white/5 rounded-xl overflow-hidden border border-gold-500/10">
+      <div class="relative h-[300px] md:h-auto">
+        <img src="https://images.unsplash.com/photo-1711239226946-23ce021df899?w=800&auto=format&fit=crop&q=80" class="w-full h-full object-cover" alt="Investment opportunity review">
+        <div class="absolute inset-0 bg-navy-950/60"></div>
+      </div>
+      <div class="bg-navy-800 p-12 md:p-16 flex flex-col justify-center">
+        <div class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-8 text-gold-500">
+          <iconify-icon icon="solar:magnifer-bold" width="24"></iconify-icon>
+        </div>
+        <p class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase mb-3">Service 03</p>
+        <h2 class="display-font text-3xl text-white tracking-tight mb-4">Investment Opportunity Review &amp; Participation</h2>
+        <p class="text-sm text-white/90 leading-relaxed">We are interested in reviewing selected business opportunities that demonstrate strong potential, strategic fit, and commercial promise. Where appropriate, we are open to deeper discussions around participation, collaboration, and investment alignment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Service 4: Commercial Execution & Market Expansion -->
 <section class="px-6 lg:px-8 pb-32">
   <div class="max-w-7xl mx-auto">
     <div class="grid md:grid-cols-2 gap-px bg-white/5 rounded-xl overflow-hidden">
       <div class="bg-navy-800 p-12 md:p-16 flex flex-col justify-center order-2 md:order-1">
         <div class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-8 text-gold-500">
-          <iconify-icon icon="solar:cart-large-2-bold" width="24"></iconify-icon>
-        </div>
-        <p class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase mb-3">Service 02</p>
-        <h2 class="display-font text-3xl text-white tracking-tight mb-4">E-Commerce Solutions</h2>
-        <p class="text-sm text-white/90 leading-relaxed mb-6">We manage and optimize multi-channel e-commerce operations across Amazon and other major platforms. From product listing and inventory management to customer service and fulfillment — we handle the full lifecycle so you can focus on growth.</p>
-        <ul class="space-y-3">
-          <li class="flex items-center gap-3 text-sm text-white/90"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500 shrink-0" width="16"></iconify-icon>Multi-channel marketplace management</li>
-          <li class="flex items-center gap-3 text-sm text-white/90"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500 shrink-0" width="16"></iconify-icon>Product listing optimization</li>
-          <li class="flex items-center gap-3 text-sm text-white/90"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500 shrink-0" width="16"></iconify-icon>Inventory &amp; fulfillment coordination</li>
-          <li class="flex items-center gap-3 text-sm text-white/90"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500 shrink-0" width="16"></iconify-icon>Brand identity &amp; photography</li>
-          <li class="flex items-center gap-3 text-sm text-white/90"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500 shrink-0" width="16"></iconify-icon>Conversion rate optimization</li>
-        </ul>
-      </div>
-      <div class="relative h-[350px] md:h-auto order-1 md:order-2">
-        <img src="https://images.unsplash.com/photo-1606836591695-4d58a73eba1e?w=800&auto=format&fit=crop&q=80" class="w-full h-full object-cover" alt="E-commerce operations">
-        <div class="absolute inset-0 bg-navy-950/60"></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- International Trade -->
-<section class="px-6 lg:px-8 pb-32">
-  <div class="max-w-7xl mx-auto">
-    <div class="grid md:grid-cols-2 gap-px bg-white/5 rounded-xl overflow-hidden">
-      <div class="relative h-[350px] md:h-auto">
-        <img src="https://images.unsplash.com/photo-1711239226946-23ce021df899?w=800&auto=format&fit=crop&q=80" class="w-full h-full object-cover" alt="International trade partnerships">
-        <div class="absolute inset-0 bg-navy-950/60"></div>
-      </div>
-      <div class="bg-navy-800 p-12 md:p-16 flex flex-col justify-center">
-        <div class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-8 text-gold-500">
           <iconify-icon icon="solar:global-bold" width="24"></iconify-icon>
         </div>
-        <p class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase mb-3">Service 03</p>
-        <h2 class="display-font text-3xl text-white tracking-tight mb-4">International Trade</h2>
-        <p class="text-sm text-white/90 leading-relaxed mb-6">We connect Canadian businesses with global markets through strategic sourcing, logistics coordination, and cross-border trade facilitation. Our network of trusted suppliers and partners ensures reliable, ethical supply chains.</p>
-        <ul class="space-y-3">
-          <li class="flex items-center gap-3 text-sm text-white/90"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500 shrink-0" width="16"></iconify-icon>Global sourcing &amp; supplier relations</li>
-          <li class="flex items-center gap-3 text-sm text-white/90"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500 shrink-0" width="16"></iconify-icon>Cross-border logistics management</li>
-          <li class="flex items-center gap-3 text-sm text-white/90"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500 shrink-0" width="16"></iconify-icon>Customs &amp; regulatory compliance</li>
-          <li class="flex items-center gap-3 text-sm text-white/90"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500 shrink-0" width="16"></iconify-icon>Multi-market distribution</li>
-          <li class="flex items-center gap-3 text-sm text-white/90"><iconify-icon icon="solar:check-circle-bold" class="text-gold-500 shrink-0" width="16"></iconify-icon>Ethical &amp; sustainable supply chains</li>
-        </ul>
+        <p class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase mb-3">Service 04</p>
+        <h2 class="display-font text-3xl text-white tracking-tight mb-4">Commercial Execution &amp; Market Expansion</h2>
+        <p class="text-sm text-white/90 leading-relaxed">Where relevant to the business model, we support practical market execution through channels, platforms, sourcing, trade support, and operational development.</p>
+      </div>
+      <div class="relative h-[300px] md:h-auto order-1 md:order-2">
+        <img src="https://images.unsplash.com/photo-1606836591695-4d58a73eba1e?w=800&auto=format&fit=crop&q=80" class="w-full h-full object-cover" alt="Commercial execution and market expansion">
+        <div class="absolute inset-0 bg-navy-950/60"></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Industries We Serve -->
+<!-- Who We Work With -->
 <section class="px-6 lg:px-8 pb-32">
   <div class="max-w-7xl mx-auto">
-    <div class="mb-16">
-      <div class="gold-line mb-6"></div>
-      <p class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase mb-3">Industries</p>
-      <h2 class="display-font text-3xl md:text-5xl text-white tracking-tight">Industries we serve.</h2>
-    </div>
-    <div class="grid md:grid-cols-3 gap-px bg-white/5 rounded-xl overflow-hidden">
-      <div class="bg-navy-900 p-10 card-glow transition-all">
-        <div class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-6 text-gold-500">
-          <iconify-icon icon="solar:box-bold" width="24"></iconify-icon>
-        </div>
-        <h3 class="text-lg font-bold text-white mb-2">Consumer Products</h3>
-        <p class="text-sm text-white/90 leading-relaxed">Electronics, gadgets, home goods, and everyday consumer products ready for market.</p>
-      </div>
-      <div class="bg-navy-900 p-10 card-glow transition-all">
-        <div class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-6 text-gold-500">
-          <iconify-icon icon="solar:heart-pulse-bold" width="24"></iconify-icon>
-        </div>
-        <h3 class="text-lg font-bold text-white mb-2">Health &amp; Wellness</h3>
-        <p class="text-sm text-white/90 leading-relaxed">Supplements, fitness equipment, personal care, and wellness products.</p>
-      </div>
-      <div class="bg-navy-900 p-10 card-glow transition-all">
-        <div class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-6 text-gold-500">
-          <iconify-icon icon="solar:leaf-bold" width="24"></iconify-icon>
-        </div>
-        <h3 class="text-lg font-bold text-white mb-2">Food &amp; Agriculture</h3>
-        <p class="text-sm text-white/90 leading-relaxed">Specialty foods, organic products, agricultural goods, and food technology.</p>
-      </div>
-      <div class="bg-navy-900 p-10 card-glow transition-all">
-        <div class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-6 text-gold-500">
-          <iconify-icon icon="solar:monitor-bold" width="24"></iconify-icon>
-        </div>
-        <h3 class="text-lg font-bold text-white mb-2">Technology</h3>
-        <p class="text-sm text-white/90 leading-relaxed">Software products, SaaS tools, hardware, and tech accessories.</p>
-      </div>
-      <div class="bg-navy-900 p-10 card-glow transition-all">
-        <div class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-6 text-gold-500">
-          <iconify-icon icon="solar:planet-bold" width="24"></iconify-icon>
-        </div>
-        <h3 class="text-lg font-bold text-white mb-2">Sustainable &amp; Eco</h3>
-        <p class="text-sm text-white/90 leading-relaxed">Eco-friendly products, sustainable brands, and green technology solutions.</p>
-      </div>
-      <div class="bg-navy-900 p-10 card-glow transition-all">
-        <div class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-6 text-gold-500">
-          <iconify-icon icon="solar:hanger-bold" width="24"></iconify-icon>
-        </div>
-        <h3 class="text-lg font-bold text-white mb-2">Fashion &amp; Lifestyle</h3>
-        <p class="text-sm text-white/90 leading-relaxed">Apparel, accessories, lifestyle brands, and fashion-forward products.</p>
+    <div class="bg-navy-800 rounded-xl p-12 md:p-16 border border-white/5 relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-[300px] h-[300px] bg-gold-500/[0.03] rounded-full blur-[80px] translate-x-1/3 -translate-y-1/3"></div>
+      <div class="relative z-10 max-w-3xl mx-auto text-center">
+        <div class="gold-line mb-6 mx-auto"></div>
+        <p class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase mb-3">Our Clients</p>
+        <h2 class="display-font text-3xl md:text-4xl text-white tracking-tight mb-6">Who we work with.</h2>
+        <p class="text-sm text-white/90 leading-relaxed">We are interested in working with founders, businesses, operators, and investors who are focused on real opportunity, disciplined growth, and long-term value creation.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
+<!-- Services Closing CTA -->
 <section class="px-6 lg:px-8 pb-32">
   <div class="max-w-7xl mx-auto">
     <div class="bg-gradient-to-br from-navy-800 to-navy-700 rounded-xl p-12 md:p-20 text-center border border-gold-500/10 relative overflow-hidden">
       <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-gold-500/[0.04] rounded-full blur-[100px] -translate-y-1/2"></div>
       <div class="relative z-10">
         <p class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase mb-4">Get Started</p>
-        <h2 class="display-font text-3xl md:text-5xl text-white tracking-tight mb-6">Not sure where to start?</h2>
-        <p class="text-white/90 max-w-md mx-auto mb-10 text-sm leading-relaxed">Tell us about your product or business idea. We'll help you find the right path to market.</p>
-        <a href="/about/#contact" class="bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 px-10 py-4 rounded text-sm font-bold tracking-wider uppercase hover:from-gold-400 hover:to-gold-500 transition-all shadow-xl shadow-gold-500/15 inline-block">Contact Us Today</a>
+        <h2 class="display-font text-3xl md:text-5xl text-white tracking-tight mb-6">Start the conversation.</h2>
+        <p class="text-white/90 max-w-md mx-auto mb-10 text-sm leading-relaxed">If you are building a business, exploring capital, or looking for access to promising opportunities, we would be glad to hear from you.</p>
+        <a href="/contact/" class="bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 px-10 py-4 rounded text-sm font-bold tracking-wider uppercase hover:from-gold-400 hover:to-gold-500 transition-all shadow-xl shadow-gold-500/15 inline-block">Contact Us Today</a>
       </div>
     </div>
   </div>
@@ -209,7 +177,7 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
     <div class="grid md:grid-cols-4 gap-12 mb-16">
       <div class="md:col-span-1">
         <img src="/src/logo.webp" alt="Griffin Global Commerce" class="h-8 mb-6">
-        <p class="text-sm text-white/50 leading-relaxed mb-6">A proud Canadian company helping businesses raise capital, launch online, and expand globally.</p>
+        <p class="text-sm text-white/50 leading-relaxed mb-6">A Canadian business platform focused on growth, investment, crowdfunding, and market development.</p>
       </div>
       <div>
         <p class="text-xs font-bold tracking-[0.2em] uppercase text-gold-500/50 mb-6">Pages</p>
@@ -217,7 +185,8 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
           <a href="/" class="text-sm text-white/90 hover:text-gold-400 transition-colors">Home</a>
           <a href="/services/" class="text-sm text-white/90 hover:text-gold-400 transition-colors">Services</a>
           <a href="/about/" class="text-sm text-white/90 hover:text-gold-400 transition-colors">About</a>
-          <a href="/about/#contact" class="text-sm text-white/90 hover:text-gold-400 transition-colors">Contact</a>
+          <a href="/investors/" class="text-sm text-white/90 hover:text-gold-400 transition-colors">For Investors</a>
+          <a href="/contact/" class="text-sm text-white/90 hover:text-gold-400 transition-colors">Contact</a>
         </div>
       </div>
       <div>
@@ -229,8 +198,7 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
       <div>
         <p class="text-xs font-bold tracking-[0.2em] uppercase text-gold-500/50 mb-6">Contact</p>
         <a href="mailto:info@grifglo.com" class="text-sm text-white/90 hover:text-gold-400 transition-colors block mb-2">info@grifglo.com</a>
-        <p class="text-sm text-white/50 mb-2">(778) 877-7274</p>
-        <p class="text-xs text-white/40 leading-relaxed">2030 Marine Dr<br>North Vancouver, BC V7P 1V7<br>Canada</p>
+        <p class="text-xs text-white/40 leading-relaxed">North Vancouver, British Columbia<br>Canada</p>
       </div>
     </div>
     <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
@@ -239,7 +207,6 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
     </div>
   </div>
 </footer>
-
 
 </body>
 </html>
