@@ -7,219 +7,262 @@
 <meta name="description" content="Griffin Global Commerce Ltd. is a Vancouver-based company operating at the intersection of business development, investment thinking, crowdfunding, and market expansion.">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
-tailwind.config={theme:{extend:{colors:{navy:{950:'#060B18',900:'#0B1120',800:'#111B33',700:'#172345'},gold:{300:'#D4B85C',400:'#C9A84C',500:'#B8923A',600:'#8B6914'}}}}}
+tailwind.config={theme:{extend:{colors:{navy:{950:'#060B18',900:'#0B1120',800:'#111B33',700:'#172345',600:'#1E2D52'},gold:{300:'#D4B85C',400:'#C9A84C',500:'#B8923A',600:'#8B6914'}},animation:{'float':'float 6s ease-in-out infinite','pulse-slow':'pulse 4s ease-in-out infinite'},keyframes:{float:{'0%, 100%':{transform:'translateY(0)'},'50%':{transform:'translateY(-20px)'}}}}}}
 </script>
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
 <style>
 body{font-family:'Inter',sans-serif;background:#060B18;color:#E2E8F0;overflow-x:hidden}
 h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
 .gold-line{width:40px;height:2px;background:linear-gradient(90deg,#B8923A,#C9A84C)}
-.card-glow:hover{box-shadow:0 0 40px rgba(212,168,67,0.06)}
+.card-glow{transition:all 0.4s cubic-bezier(0.4,0,0.2,1)}
+.card-glow:hover{box-shadow:0 0 60px rgba(184,146,58,0.08);transform:translateY(-4px);border-color:rgba(184,146,58,0.2)}
+.hero-gradient{background:radial-gradient(ellipse 80% 60% at 70% 20%,rgba(184,146,58,0.06),transparent 70%)}
+.section-divider{height:1px;background:linear-gradient(90deg,transparent,rgba(184,146,58,0.15),transparent)}
+.text-gradient{background:linear-gradient(135deg,#D4B85C,#B8923A,#8B6914);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.glass{background:rgba(11,17,32,0.6);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.grid-bg{background-image:linear-gradient(rgba(184,146,58,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(184,146,58,0.03) 1px,transparent 1px);background-size:60px 60px}
 </style>
 </head>
 <body class="antialiased">
 
 <!-- Nav -->
-<nav class="fixed top-0 w-full z-50 bg-navy-950/90 backdrop-blur-xl border-b border-gold-500/10">
+<nav class="fixed top-0 w-full z-50 glass border-b border-gold-500/10">
   <div class="max-w-7xl mx-auto px-6 lg:px-8">
     <div class="flex justify-between items-center h-[72px]">
-      <a href="/" class="flex items-center gap-3">
-        <img src="/src/logo.webp" alt="Griffin Global Commerce" class="h-8">
-      </a>
+      <a href="/" class="flex items-center gap-3"><img src="/src/logo.webp" alt="Griffin Global Commerce" class="h-8"></a>
       <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="md:hidden text-white/90" aria-label="Toggle navigation menu">
         <iconify-icon icon="solar:hamburger-menu-linear" width="24"></iconify-icon>
       </button>
       <div class="hidden md:flex items-center gap-8">
-        <a href="/services/" class="text-[13px] text-white/90 hover:text-gold-400 transition-colors font-medium">Services</a>
+        <a href="/services/" class="text-[13px] text-white/70 hover:text-gold-400 transition-colors font-medium">Services</a>
         <a href="/about/" class="text-[13px] text-white hover:text-gold-400 transition-colors font-medium">About</a>
-        <a href="/investors/" class="text-[13px] text-white/90 hover:text-gold-400 transition-colors font-medium">For Investors</a>
-        <a href="/contact/" class="bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 px-6 py-2.5 rounded text-xs font-bold tracking-wider uppercase hover:from-gold-400 hover:to-gold-500 transition-all shadow-lg shadow-gold-500/10">Contact Us</a>
+        <a href="/investors/" class="text-[13px] text-white/70 hover:text-gold-400 transition-colors font-medium">For Investors</a>
+        <a href="/contact/" class="bg-gradient-to-r from-gold-500 to-gold-400 text-navy-950 px-6 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase hover:shadow-lg hover:shadow-gold-500/20 transition-all">Contact Us</a>
       </div>
     </div>
     <div id="mobileMenu" class="hidden md:hidden pb-6 space-y-4">
-      <a href="/services/" class="block text-sm text-white/90 hover:text-gold-400 transition-colors">Services</a>
-      <a href="/about/" class="block text-sm text-white/90 hover:text-gold-400 transition-colors">About</a>
-      <a href="/investors/" class="block text-sm text-white/90 hover:text-gold-400 transition-colors">For Investors</a>
-      <a href="/contact/" class="block text-sm text-white/90 hover:text-gold-400 transition-colors">Contact</a>
+      <a href="/services/" class="block text-sm text-white/90 hover:text-gold-400">Services</a>
+      <a href="/about/" class="block text-sm text-white/90 hover:text-gold-400">About</a>
+      <a href="/investors/" class="block text-sm text-white/90 hover:text-gold-400">For Investors</a>
+      <a href="/contact/" class="block text-sm text-white/90 hover:text-gold-400">Contact</a>
     </div>
   </div>
 </nav>
 
-<!-- Section 1: About Hero -->
-<section class="pt-[160px] pb-20 px-6 lg:px-8 relative overflow-hidden">
-  <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-gold-500/[0.03] rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3"></div>
+<!-- About Hero -->
+<section class="pt-[140px] pb-32 px-6 lg:px-8 relative hero-gradient min-h-[70vh] flex items-center">
+  <div class="absolute top-20 right-10 w-[500px] h-[500px] bg-gold-500/[0.04] rounded-full blur-[150px] animate-float"></div>
+  <div class="absolute inset-0 grid-bg opacity-40"></div>
+  <div class="max-w-7xl mx-auto relative z-10 w-full">
+    <div class="max-w-4xl">
+      <div class="inline-flex items-center gap-2 bg-gold-500/10 border border-gold-500/20 rounded-full px-4 py-1.5 mb-8">
+        <span class="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse-slow"></span>
+        <span class="text-gold-400 text-xs font-semibold tracking-wide uppercase">About Us</span>
+      </div>
+      <h1 class="display-font text-5xl md:text-7xl font-medium text-white leading-[1.05] tracking-tight mb-8">A Canadian platform focused on growth, opportunity, and <span class="text-gradient">long-term value.</span></h1>
+      <div class="max-w-2xl space-y-4 text-white/70 text-[15px] leading-relaxed">
+        <p class="text-lg text-white/80 font-light">Griffin Global Commerce Ltd. is a Vancouver-based company operating at the intersection of business development, investment thinking, crowdfunding, commercial execution, and market expansion.</p>
+        <p>We work with businesses that are building toward growth, and we are equally interested in engaging with investors who are looking for access to opportunities with strong fundamentals and meaningful upside potential.</p>
+        <p>Our role is not limited to one industry or one channel. We take a broader view, looking at businesses and opportunities through the lens of commercial viability, scalability, market readiness, and long-term value creation.</p>
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-navy-950 to-transparent"></div>
+</section>
+
+<div class="section-divider max-w-7xl mx-auto"></div>
+
+<!-- Our Story -->
+<section class="py-32 px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-5">
+        <div class="relative">
+          <div class="absolute -inset-4 bg-gradient-to-br from-gold-500/10 to-transparent rounded-2xl blur-2xl"></div>
+          <div class="relative rounded-2xl overflow-hidden h-[500px] border border-white/5 ring-1 ring-gold-500/10">
+            <img src="https://images.unsplash.com/photo-1711239226946-23ce021df899?w=800&auto=format&fit=crop&q=80" class="w-full h-full object-cover" alt="Griffin Global Commerce">
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-navy-950/20 to-transparent"></div>
+          </div>
+        </div>
+      </div>
+      <div class="md:col-span-7">
+        <div class="inline-flex items-center gap-2 mb-6">
+          <div class="gold-line"></div>
+          <span class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase">Our Story</span>
+        </div>
+        <h2 class="display-font text-4xl md:text-5xl text-white tracking-tight mb-8 leading-[1.1]">Built around opportunity and execution.</h2>
+        <div class="space-y-4 text-white/70 text-[15px] leading-relaxed">
+          <p>Griffin Global Commerce was built on the belief that many promising businesses never reach their full potential because they lack the right combination of structure, execution, and capital alignment.</p>
+          <p>Some need better strategic direction. Some need support entering the market. Some need access to funding. Others represent investment opportunities that require the right commercial lens and growth platform to move forward.</p>
+          <p>We created Griffin Global Commerce Ltd. to operate in that space — where business opportunity, practical execution, and capital readiness meet.</p>
+          <p>Our experience also includes hands-on exposure to real commercial activity through internal brands such as Grifglo and Celmin, and through channels including Amazon, Walmart, and Shopify. That operating experience strengthens the way we assess opportunities and support growth.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider max-w-7xl mx-auto"></div>
+
+<!-- Mission & Vision -->
+<section class="py-32 px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="relative group">
+        <div class="absolute -inset-px bg-gradient-to-b from-gold-500/20 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="relative bg-navy-800/40 backdrop-blur rounded-2xl p-12 md:p-14 border border-white/5 h-full">
+          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center mb-8 text-gold-400">
+            <iconify-icon icon="solar:target-bold" width="28"></iconify-icon>
+          </div>
+          <span class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase">Our Mission</span>
+          <h3 class="display-font text-3xl text-white tracking-tight mb-4 mt-2">What we are here to do.</h3>
+          <p class="text-sm text-white/60 leading-relaxed">Our mission is to identify, support, and help develop businesses and opportunities with real growth potential by bringing together strategic thinking, practical execution, and a capital-oriented perspective.</p>
+        </div>
+      </div>
+      <div class="relative group">
+        <div class="absolute -inset-px bg-gradient-to-b from-gold-500/20 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="relative bg-navy-800/40 backdrop-blur rounded-2xl p-12 md:p-14 border border-white/5 h-full">
+          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center mb-8 text-gold-400">
+            <iconify-icon icon="solar:eye-bold" width="28"></iconify-icon>
+          </div>
+          <span class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase">Our Vision</span>
+          <h3 class="display-font text-3xl text-white tracking-tight mb-4 mt-2">Where we are headed.</h3>
+          <p class="text-sm text-white/60 leading-relaxed">Our vision is to build a trusted Canadian platform that connects businesses and investors through credible opportunities, practical support, and long-term growth thinking.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What Guides Us -->
+<section class="py-32 px-6 lg:px-8 relative">
+  <div class="absolute inset-0 grid-bg opacity-30"></div>
   <div class="max-w-7xl mx-auto relative z-10">
-    <div class="max-w-3xl">
-      <div class="gold-line mb-8"></div>
-      <p class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase mb-6">About Us</p>
-      <h1 class="display-font text-4xl md:text-6xl font-medium text-white leading-[1.1] tracking-tight mb-8">A Canadian platform focused on growth, opportunity, and <span class="text-gold-400">long-term value.</span></h1>
-      <p class="text-lg text-white/90 leading-relaxed max-w-xl font-light mb-4">Griffin Global Commerce Ltd. is a Vancouver-based company operating at the intersection of business development, investment thinking, crowdfunding, commercial execution, and market expansion.</p>
-      <p class="text-base text-white/80 leading-relaxed max-w-xl font-light mb-4">We work with businesses that are building toward growth, and we are equally interested in engaging with investors who are looking for access to opportunities with strong fundamentals and meaningful upside potential.</p>
-      <p class="text-base text-white/80 leading-relaxed max-w-xl font-light">Our role is not limited to one industry or one channel. We take a broader view, looking at businesses and opportunities through the lens of commercial viability, scalability, market readiness, and long-term value creation.</p>
+    <div class="text-center mb-20">
+      <div class="inline-flex items-center gap-2 mb-6">
+        <div class="gold-line"></div>
+        <span class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase">Our Principles</span>
+        <div class="gold-line"></div>
+      </div>
+      <h2 class="display-font text-4xl md:text-5xl lg:text-6xl text-white tracking-tight">What guides our approach.</h2>
     </div>
-  </div>
-</section>
-
-<!-- Section 2: Our Story -->
-<section class="px-6 lg:px-8 pb-32">
-  <div class="max-w-7xl mx-auto">
-    <div class="grid md:grid-cols-2 gap-16 items-center">
-      <div class="rounded-xl overflow-hidden relative h-[400px] border border-white/5">
-        <img src="https://images.unsplash.com/photo-1711239226946-23ce021df899?w=800&auto=format&fit=crop&q=80" class="w-full h-full object-cover" alt="Griffin Global Commerce">
-        <div class="absolute inset-0 bg-gradient-to-t from-navy-950/60 to-transparent"></div>
-      </div>
-      <div>
-        <div class="gold-line mb-6"></div>
-        <p class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase mb-3">Our Story</p>
-        <h2 class="display-font text-3xl md:text-4xl text-white tracking-tight mb-6">Built around opportunity and execution.</h2>
-        <p class="text-sm text-white/90 leading-relaxed mb-4">Griffin Global Commerce was built on the belief that many promising businesses never reach their full potential because they lack the right combination of structure, execution, and capital alignment.</p>
-        <p class="text-sm text-white/90 leading-relaxed mb-4">Some need better strategic direction. Some need support entering the market. Some need access to funding. Others represent investment opportunities that require the right commercial lens and growth platform to move forward.</p>
-        <p class="text-sm text-white/90 leading-relaxed mb-4">We created Griffin Global Commerce Ltd. to operate in that space — where business opportunity, practical execution, and capital readiness meet.</p>
-        <p class="text-sm text-white/90 leading-relaxed">Our experience also includes hands-on exposure to real commercial activity through internal brands such as Grifglo and Celmin, and through channels including Amazon, Walmart, and Shopify. That operating experience strengthens the way we assess opportunities and support growth.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Section 3 & 4: Mission & Vision -->
-<section class="px-6 lg:px-8 pb-32">
-  <div class="max-w-7xl mx-auto">
-    <div class="grid md:grid-cols-2 gap-px bg-white/5 rounded-xl overflow-hidden">
-      <div class="bg-navy-800 p-12 md:p-16">
-        <div class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-8 text-gold-500">
-          <iconify-icon icon="solar:target-bold" width="24"></iconify-icon>
+    <div class="grid md:grid-cols-5 gap-4">
+      <div class="bg-navy-800/30 rounded-2xl p-8 border border-white/5 card-glow group text-center">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center mb-5 text-gold-400 mx-auto group-hover:scale-110 transition-transform">
+          <iconify-icon icon="solar:eye-bold" width="22"></iconify-icon>
         </div>
-        <p class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase mb-3">Our Mission</p>
-        <h3 class="display-font text-2xl text-white tracking-tight mb-4">What we are here to do.</h3>
-        <p class="text-sm text-white/90 leading-relaxed">Our mission is to identify, support, and help develop businesses and opportunities with real growth potential by bringing together strategic thinking, practical execution, and a capital-oriented perspective.</p>
+        <h3 class="text-sm font-bold text-white mb-2">Clarity</h3>
+        <p class="text-xs text-white/50 leading-relaxed">Strong opportunities deserve clear thinking and honest evaluation.</p>
       </div>
-      <div class="bg-navy-800 p-12 md:p-16">
-        <div class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-8 text-gold-500">
-          <iconify-icon icon="solar:eye-bold" width="24"></iconify-icon>
+      <div class="bg-navy-800/30 rounded-2xl p-8 border border-white/5 card-glow group text-center">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center mb-5 text-gold-400 mx-auto group-hover:scale-110 transition-transform">
+          <iconify-icon icon="solar:settings-bold" width="22"></iconify-icon>
         </div>
-        <p class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase mb-3">Our Vision</p>
-        <h3 class="display-font text-2xl text-white tracking-tight mb-4">Where we are headed.</h3>
-        <p class="text-sm text-white/90 leading-relaxed">Our vision is to build a trusted Canadian platform that connects businesses and investors through credible opportunities, practical support, and long-term growth thinking.</p>
+        <h3 class="text-sm font-bold text-white mb-2">Execution</h3>
+        <p class="text-xs text-white/50 leading-relaxed">Ideas only matter when they can be turned into action.</p>
+      </div>
+      <div class="bg-navy-800/30 rounded-2xl p-8 border border-white/5 card-glow group text-center">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center mb-5 text-gold-400 mx-auto group-hover:scale-110 transition-transform">
+          <iconify-icon icon="solar:shield-check-bold" width="22"></iconify-icon>
+        </div>
+        <h3 class="text-sm font-bold text-white mb-2">Discipline</h3>
+        <p class="text-xs text-white/50 leading-relaxed">Good growth requires structure, selectivity, and sound judgment.</p>
+      </div>
+      <div class="bg-navy-800/30 rounded-2xl p-8 border border-white/5 card-glow group text-center">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center mb-5 text-gold-400 mx-auto group-hover:scale-110 transition-transform">
+          <iconify-icon icon="solar:users-group-two-rounded-bold" width="22"></iconify-icon>
+        </div>
+        <h3 class="text-sm font-bold text-white mb-2">Partnership</h3>
+        <p class="text-xs text-white/50 leading-relaxed">The best opportunities are built through aligned relationships.</p>
+      </div>
+      <div class="bg-navy-800/30 rounded-2xl p-8 border border-white/5 card-glow group text-center">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center mb-5 text-gold-400 mx-auto group-hover:scale-110 transition-transform">
+          <iconify-icon icon="solar:chart-2-bold" width="22"></iconify-icon>
+        </div>
+        <h3 class="text-sm font-bold text-white mb-2">Long-Term Value</h3>
+        <p class="text-xs text-white/50 leading-relaxed">We focus on meaningful growth rather than short-term noise.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Section 5: What Guides Us -->
-<section class="px-6 lg:px-8 pb-32">
+<!-- What Makes Us Different -->
+<section class="py-32 px-6 lg:px-8">
   <div class="max-w-7xl mx-auto">
-    <div class="mb-16">
-      <div class="gold-line mb-6"></div>
-      <p class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase mb-3">Our Principles</p>
-      <h2 class="display-font text-3xl md:text-5xl text-white tracking-tight">What guides our approach.</h2>
-    </div>
-    <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
-      <div class="bg-navy-800 rounded-xl p-8 border border-white/5 card-glow transition-all">
-        <div class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center mb-5 text-gold-500">
-          <iconify-icon icon="solar:eye-bold" width="20"></iconify-icon>
+    <div class="relative rounded-3xl overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-r from-navy-800 via-navy-800/95 to-navy-800/80"></div>
+      <div class="absolute inset-0 grid-bg opacity-20"></div>
+      <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-gold-500/[0.06] rounded-full blur-[120px] translate-x-1/4 -translate-y-1/4"></div>
+      <div class="relative z-10 p-12 md:p-20">
+        <div class="max-w-3xl">
+          <div class="inline-flex items-center gap-2 mb-6">
+            <div class="gold-line"></div>
+            <span class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase">Our Difference</span>
+          </div>
+          <h2 class="display-font text-3xl md:text-5xl text-white tracking-tight mb-8">Why our model is different.</h2>
+          <div class="space-y-4 text-[15px] text-white/70 leading-relaxed">
+            <p>Many firms operate in narrow lanes — advisory only, capital only, or operations only. Griffin Global Commerce takes a broader and more integrated approach.</p>
+            <p>We look at businesses and opportunities from multiple angles: growth potential, operational reality, market access, capital needs, and strategic fit. This allows us to engage more thoughtfully with both businesses and investors.</p>
+          </div>
         </div>
-        <h3 class="text-base font-bold text-white mb-2">Clarity</h3>
-        <p class="text-sm text-white/70 leading-relaxed">Strong opportunities deserve clear thinking and honest evaluation.</p>
-      </div>
-      <div class="bg-navy-800 rounded-xl p-8 border border-white/5 card-glow transition-all">
-        <div class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center mb-5 text-gold-500">
-          <iconify-icon icon="solar:settings-bold" width="20"></iconify-icon>
-        </div>
-        <h3 class="text-base font-bold text-white mb-2">Execution</h3>
-        <p class="text-sm text-white/70 leading-relaxed">Ideas only matter when they can be turned into action.</p>
-      </div>
-      <div class="bg-navy-800 rounded-xl p-8 border border-white/5 card-glow transition-all">
-        <div class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center mb-5 text-gold-500">
-          <iconify-icon icon="solar:shield-check-bold" width="20"></iconify-icon>
-        </div>
-        <h3 class="text-base font-bold text-white mb-2">Discipline</h3>
-        <p class="text-sm text-white/70 leading-relaxed">Good growth requires structure, selectivity, and sound judgment.</p>
-      </div>
-      <div class="bg-navy-800 rounded-xl p-8 border border-white/5 card-glow transition-all">
-        <div class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center mb-5 text-gold-500">
-          <iconify-icon icon="solar:users-group-two-rounded-bold" width="20"></iconify-icon>
-        </div>
-        <h3 class="text-base font-bold text-white mb-2">Partnership</h3>
-        <p class="text-sm text-white/70 leading-relaxed">The best opportunities are built through aligned relationships.</p>
-      </div>
-      <div class="bg-navy-800 rounded-xl p-8 border border-white/5 card-glow transition-all">
-        <div class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center mb-5 text-gold-500">
-          <iconify-icon icon="solar:chart-2-bold" width="20"></iconify-icon>
-        </div>
-        <h3 class="text-base font-bold text-white mb-2">Long-Term Value</h3>
-        <p class="text-sm text-white/70 leading-relaxed">We focus on meaningful growth rather than short-term noise.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Section 6: What Makes Us Different -->
-<section class="px-6 lg:px-8 pb-32">
+<!-- About Closing -->
+<section class="py-32 px-6 lg:px-8">
   <div class="max-w-7xl mx-auto">
-    <div class="bg-navy-800 rounded-xl p-12 md:p-16 border border-white/5 relative overflow-hidden">
-      <div class="absolute top-0 right-0 w-[300px] h-[300px] bg-gold-500/[0.03] rounded-full blur-[80px] translate-x-1/3 -translate-y-1/3"></div>
-      <div class="relative z-10 max-w-3xl">
-        <div class="gold-line mb-6"></div>
-        <p class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase mb-3">Our Difference</p>
-        <h2 class="display-font text-3xl md:text-4xl text-white tracking-tight mb-6">Why our model is different.</h2>
-        <p class="text-sm text-white/90 leading-relaxed mb-4">Many firms operate in narrow lanes — advisory only, capital only, or operations only. Griffin Global Commerce takes a broader and more integrated approach.</p>
-        <p class="text-sm text-white/90 leading-relaxed">We look at businesses and opportunities from multiple angles: growth potential, operational reality, market access, capital needs, and strategic fit. This allows us to engage more thoughtfully with both businesses and investors.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Section 7: About Closing -->
-<section class="px-6 lg:px-8 pb-32">
-  <div class="max-w-7xl mx-auto">
-    <div class="bg-gradient-to-br from-navy-800 to-navy-700 rounded-xl p-12 md:p-20 text-center border border-gold-500/10 relative overflow-hidden">
-      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-gold-500/[0.04] rounded-full blur-[100px] -translate-y-1/2"></div>
-      <div class="relative z-10">
-        <p class="text-gold-500 text-xs font-bold tracking-[0.25em] uppercase mb-4">Get in Touch</p>
-        <h2 class="display-font text-3xl md:text-5xl text-white tracking-tight mb-6">A platform for businesses and investors.</h2>
-        <p class="text-white/90 max-w-lg mx-auto mb-10 text-sm leading-relaxed">Whether you are building a business, exploring growth, preparing for capital, or seeking access to compelling opportunities, Griffin Global Commerce Ltd. is positioned to support meaningful conversations and long-term value creation.</p>
-        <a href="/contact/" class="bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 px-10 py-4 rounded text-sm font-bold tracking-wider uppercase hover:from-gold-400 hover:to-gold-500 transition-all shadow-xl shadow-gold-500/15 inline-block">Contact Us</a>
+    <div class="relative rounded-3xl overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-navy-700 via-navy-800 to-navy-900"></div>
+      <div class="absolute inset-0 grid-bg opacity-20"></div>
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold-500/[0.06] rounded-full blur-[150px]"></div>
+      <div class="relative z-10 p-12 md:p-24 text-center">
+        <div class="inline-flex items-center gap-2 bg-gold-500/10 border border-gold-500/20 rounded-full px-4 py-1.5 mb-8">
+          <span class="text-gold-400 text-xs font-semibold tracking-wide uppercase">Get in Touch</span>
+        </div>
+        <h2 class="display-font text-3xl md:text-5xl lg:text-6xl text-white tracking-tight mb-6">A platform for businesses and investors.</h2>
+        <p class="text-white/60 max-w-lg mx-auto mb-12 text-[15px] leading-relaxed">Whether you are building a business, exploring growth, preparing for capital, or seeking access to compelling opportunities, Griffin Global Commerce Ltd. is positioned to support meaningful conversations and long-term value creation.</p>
+        <a href="/contact/" class="group bg-gradient-to-r from-gold-500 to-gold-400 text-navy-950 px-10 py-4 rounded-full text-sm font-bold tracking-wider uppercase hover:shadow-xl hover:shadow-gold-500/20 transition-all inline-flex items-center gap-2">Contact Us <iconify-icon icon="solar:arrow-right-linear" class="group-hover:translate-x-1 transition-transform"></iconify-icon></a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Footer -->
-<footer class="bg-navy-950 border-t border-white/5">
+<footer class="border-t border-white/5 bg-navy-950">
   <div class="max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-12">
     <div class="grid md:grid-cols-4 gap-12 mb-16">
       <div class="md:col-span-1">
         <img src="/src/logo.webp" alt="Griffin Global Commerce" class="h-8 mb-6">
-        <p class="text-sm text-white/50 leading-relaxed mb-6">A Canadian business platform focused on growth, investment, crowdfunding, and market development.</p>
+        <p class="text-sm text-white/40 leading-relaxed mb-6">A Canadian business platform focused on growth, investment, crowdfunding, and market development.</p>
       </div>
       <div>
-        <p class="text-xs font-bold tracking-[0.2em] uppercase text-gold-500/50 mb-6">Pages</p>
+        <p class="text-xs font-bold tracking-[0.2em] uppercase text-gold-500/40 mb-6">Pages</p>
         <div class="flex flex-col gap-3">
-          <a href="/" class="text-sm text-white/90 hover:text-gold-400 transition-colors">Home</a>
-          <a href="/services/" class="text-sm text-white/90 hover:text-gold-400 transition-colors">Services</a>
-          <a href="/about/" class="text-sm text-white/90 hover:text-gold-400 transition-colors">About</a>
-          <a href="/investors/" class="text-sm text-white/90 hover:text-gold-400 transition-colors">For Investors</a>
-          <a href="/contact/" class="text-sm text-white/90 hover:text-gold-400 transition-colors">Contact</a>
+          <a href="/" class="text-sm text-white/60 hover:text-gold-400 transition-colors">Home</a>
+          <a href="/services/" class="text-sm text-white/60 hover:text-gold-400 transition-colors">Services</a>
+          <a href="/about/" class="text-sm text-white/60 hover:text-gold-400 transition-colors">About</a>
+          <a href="/investors/" class="text-sm text-white/60 hover:text-gold-400 transition-colors">For Investors</a>
+          <a href="/contact/" class="text-sm text-white/60 hover:text-gold-400 transition-colors">Contact</a>
         </div>
       </div>
       <div>
-        <p class="text-xs font-bold tracking-[0.2em] uppercase text-gold-500/50 mb-6">Connect</p>
-        <div class="flex flex-col gap-3">
-          <a href="https://www.linkedin.com/company/griffin-global-commerce-ltd/" target="_blank" rel="noopener" class="text-sm text-white/90 hover:text-gold-400 transition-colors">LinkedIn</a>
-        </div>
+        <p class="text-xs font-bold tracking-[0.2em] uppercase text-gold-500/40 mb-6">Connect</p>
+        <a href="https://www.linkedin.com/company/griffin-global-commerce-ltd/" target="_blank" rel="noopener" class="text-sm text-white/60 hover:text-gold-400 transition-colors">LinkedIn</a>
       </div>
       <div>
-        <p class="text-xs font-bold tracking-[0.2em] uppercase text-gold-500/50 mb-6">Contact</p>
-        <a href="mailto:info@grifglo.com" class="text-sm text-white/90 hover:text-gold-400 transition-colors block mb-2">info@grifglo.com</a>
-        <p class="text-xs text-white/40 leading-relaxed">North Vancouver, British Columbia<br>Canada</p>
+        <p class="text-xs font-bold tracking-[0.2em] uppercase text-gold-500/40 mb-6">Contact</p>
+        <a href="mailto:info@grifglo.com" class="text-sm text-white/60 hover:text-gold-400 transition-colors block mb-2">info@grifglo.com</a>
+        <p class="text-xs text-white/30 leading-relaxed">North Vancouver, British Columbia<br>Canada</p>
       </div>
     </div>
     <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-      <p class="text-xs text-white/40">&copy; 2026 Griffin Global Commerce Ltd. All rights reserved.</p>
-      <p class="text-xs text-white/40">North Vancouver, British Columbia, Canada</p>
+      <p class="text-xs text-white/30">&copy; 2026 Griffin Global Commerce Ltd. All rights reserved.</p>
+      <p class="text-xs text-white/30">North Vancouver, British Columbia, Canada</p>
     </div>
   </div>
 </footer>
