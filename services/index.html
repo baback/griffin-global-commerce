@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Services — Griffin Global Commerce</title>
 <meta name="description" content="Services built around growth, capital, and opportunity. We support businesses through strategic development, capital-oriented thinking, and practical commercial execution.">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config={theme:{extend:{colors:{navy:{950:'#071436',900:'#0C1D42',800:'#12264F',700:'#1A3160',600:'#223D70'},gold:{300:'#FFE17D',400:'#FFD966',500:'#F0C040',600:'#D4A843'}},animation:{'float':'float 6s ease-in-out infinite','pulse-slow':'pulse 4s ease-in-out infinite'},keyframes:{float:{'0%, 100%':{transform:'translateY(0)'},'50%':{transform:'translateY(-20px)'}}}}}}
@@ -35,18 +36,20 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
 <nav class="fixed top-0 w-full z-50 glass border-b border-gold-500/10">
   <div class="max-w-7xl mx-auto px-6 lg:px-8">
     <div class="flex justify-between items-center h-[72px]">
-      <a href="/" class="flex items-center gap-3"><img src="/src/logo.webp" alt="Griffin Global Commerce" class="h-12"></a>
+      <a href="/" class="flex items-center gap-3"><img src="/src/logo.png" alt="Griffin Global Commerce" class="h-10"></a>
       <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="md:hidden text-white/90" aria-label="Toggle navigation menu">
         <iconify-icon icon="solar:hamburger-menu-linear" width="24"></iconify-icon>
       </button>
       <div class="hidden md:flex items-center gap-8">
+        <a href="/" class="text-[13px] text-white/70 hover:text-gold-400 transition-colors font-medium">Home</a>
         <a href="/services/" class="text-[13px] text-white hover:text-gold-400 transition-colors font-medium">Services</a>
         <a href="/about/" class="text-[13px] text-white/70 hover:text-gold-400 transition-colors font-medium">About</a>
         <a href="/investors/" class="text-[13px] text-white/70 hover:text-gold-400 transition-colors font-medium">For Investors</a>
-        <a href="/contact/" class="bg-gradient-to-r from-gold-500 to-gold-400 text-navy-950 px-6 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase hover:shadow-lg hover:shadow-gold-500/20 transition-all">Contact Us</a>
+        <a href="/contact/" class="bg-gradient-to-r from-gold-500 to-gold-400 text-navy-950 px-6 py-2.5 rounded-md text-xs font-bold tracking-wider uppercase hover:shadow-lg hover:shadow-gold-500/20 transition-all">Contact Us</a>
       </div>
     </div>
     <div id="mobileMenu" class="hidden md:hidden pb-6 space-y-4">
+      <a href="/" class="block text-sm text-white/90 hover:text-gold-400">Home</a>
       <a href="/services/" class="block text-sm text-white/90 hover:text-gold-400">Services</a>
       <a href="/about/" class="block text-sm text-white/90 hover:text-gold-400">About</a>
       <a href="/investors/" class="block text-sm text-white/90 hover:text-gold-400">For Investors</a>
@@ -61,7 +64,7 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
   <div class="absolute inset-0 grid-bg opacity-40"></div>
   <div class="max-w-7xl mx-auto relative z-10 w-full">
     <div class="max-w-4xl">
-      <div class="inline-flex items-center gap-2 bg-gold-500/10 border border-gold-500/20 rounded-full px-4 py-1.5 mb-8">
+      <div class="inline-flex items-center gap-2 bg-gold-500/10 border border-gold-500/20 rounded-md px-4 py-1.5 mb-8">
         <span class="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse-slow"></span>
         <span class="text-gold-400 text-xs font-semibold tracking-wide uppercase">Our Services</span>
       </div>
@@ -77,7 +80,7 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
   <div class="max-w-7xl mx-auto">
     <div class="grid md:grid-cols-2 gap-8">
       <!-- Service 1 -->
-      <div class="service-card bg-navy-800/40 backdrop-blur rounded-2xl p-12 border border-white/5 card-glow group">
+      <div class="service-card bg-navy-800/40 backdrop-blur rounded-xl p-12 border border-white/5 card-glow group">
         <div class="flex items-center gap-4 mb-8">
           <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center text-gold-400 group-hover:scale-110 transition-transform">
             <iconify-icon icon="solar:chart-2-bold" width="28"></iconify-icon>
@@ -88,7 +91,7 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
         <p class="text-sm text-white/60 leading-relaxed">We work with businesses that are looking to strengthen their position, explore expansion, improve market readiness, refine their commercial direction, or prepare for their next phase of growth.</p>
       </div>
       <!-- Service 2 -->
-      <div class="service-card bg-navy-800/40 backdrop-blur rounded-2xl p-12 border border-white/5 card-glow group">
+      <div class="service-card bg-navy-800/40 backdrop-blur rounded-xl p-12 border border-white/5 card-glow group">
         <div class="flex items-center gap-4 mb-8">
           <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center text-gold-400 group-hover:scale-110 transition-transform">
             <iconify-icon icon="solar:hand-money-bold" width="28"></iconify-icon>
@@ -99,7 +102,7 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
         <p class="text-sm text-white/60 leading-relaxed">We support businesses that are preparing for crowdfunding, outside capital, or investor engagement. Our focus is on helping opportunities become more structured, more credible, and better prepared for serious discussions.</p>
       </div>
       <!-- Service 3 -->
-      <div class="service-card bg-navy-800/40 backdrop-blur rounded-2xl p-12 border border-white/5 card-glow group">
+      <div class="service-card bg-navy-800/40 backdrop-blur rounded-xl p-12 border border-white/5 card-glow group">
         <div class="flex items-center gap-4 mb-8">
           <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center text-gold-400 group-hover:scale-110 transition-transform">
             <iconify-icon icon="solar:magnifer-bold" width="28"></iconify-icon>
@@ -110,7 +113,7 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
         <p class="text-sm text-white/60 leading-relaxed">We are interested in reviewing selected business opportunities that demonstrate strong potential, strategic fit, and commercial promise. Where appropriate, we are open to deeper discussions around participation, collaboration, and investment alignment.</p>
       </div>
       <!-- Service 4 -->
-      <div class="service-card bg-navy-800/40 backdrop-blur rounded-2xl p-12 border border-white/5 card-glow group">
+      <div class="service-card bg-navy-800/40 backdrop-blur rounded-xl p-12 border border-white/5 card-glow group">
         <div class="flex items-center gap-4 mb-8">
           <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center text-gold-400 group-hover:scale-110 transition-transform">
             <iconify-icon icon="solar:global-bold" width="28"></iconify-icon>
@@ -129,7 +132,7 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
 <!-- Who We Work With -->
 <section class="py-32 px-6 lg:px-8">
   <div class="max-w-7xl mx-auto">
-    <div class="relative rounded-3xl overflow-hidden">
+    <div class="relative rounded-xl overflow-hidden">
       <div class="absolute inset-0 bg-gradient-to-r from-navy-800 via-navy-800/95 to-navy-800/80"></div>
       <div class="absolute inset-0 grid-bg opacity-20"></div>
       <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-gold-500/[0.06] rounded-full blur-[120px] translate-x-1/4 -translate-y-1/4"></div>
@@ -151,17 +154,17 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
 <!-- Services Closing CTA -->
 <section class="py-32 px-6 lg:px-8">
   <div class="max-w-7xl mx-auto">
-    <div class="relative rounded-3xl overflow-hidden">
+    <div class="relative rounded-xl overflow-hidden">
       <div class="absolute inset-0 bg-gradient-to-br from-navy-700 via-navy-800 to-navy-900"></div>
       <div class="absolute inset-0 grid-bg opacity-20"></div>
       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold-500/[0.06] rounded-full blur-[150px]"></div>
       <div class="relative z-10 p-12 md:p-24 text-center">
-        <div class="inline-flex items-center gap-2 bg-gold-500/10 border border-gold-500/20 rounded-full px-4 py-1.5 mb-8">
+        <div class="inline-flex items-center gap-2 bg-gold-500/10 border border-gold-500/20 rounded-md px-4 py-1.5 mb-8">
           <span class="text-gold-400 text-xs font-semibold tracking-wide uppercase">Get Started</span>
         </div>
         <h2 class="display-font text-3xl md:text-5xl lg:text-6xl text-white tracking-tight mb-6">Start the conversation.</h2>
         <p class="text-white/60 max-w-md mx-auto mb-12 text-[15px] leading-relaxed">If you are building a business, exploring capital, or looking for access to promising opportunities, we would be glad to hear from you.</p>
-        <a href="/contact/" class="group bg-gradient-to-r from-gold-500 to-gold-400 text-navy-950 px-10 py-4 rounded-full text-sm font-bold tracking-wider uppercase hover:shadow-xl hover:shadow-gold-500/20 transition-all inline-flex items-center gap-2">Contact Us Today <iconify-icon icon="solar:arrow-right-linear" class="group-hover:translate-x-1 transition-transform"></iconify-icon></a>
+        <a href="/contact/" class="group bg-gradient-to-r from-gold-500 to-gold-400 text-navy-950 px-10 py-4 rounded-md text-sm font-bold tracking-wider uppercase hover:shadow-xl hover:shadow-gold-500/20 transition-all inline-flex items-center gap-2">Contact Us Today <iconify-icon icon="solar:arrow-right-linear" class="group-hover:translate-x-1 transition-transform"></iconify-icon></a>
       </div>
     </div>
   </div>
@@ -172,7 +175,7 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
   <div class="max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-12">
     <div class="grid md:grid-cols-4 gap-12 mb-16">
       <div class="md:col-span-1">
-        <img src="/src/logo.webp" alt="Griffin Global Commerce" class="h-12 mb-6">
+        <img src="/src/logo.png" alt="Griffin Global Commerce" class="h-10 mb-6">
         <p class="text-sm text-white/40 leading-relaxed mb-6">A Canadian business platform focused on growth, investment, crowdfunding, and market development.</p>
       </div>
       <div>

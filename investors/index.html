@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>For Investors — Griffin Global Commerce</title>
 <meta name="description" content="Griffin Global Commerce partners with investors around carefully evaluated business opportunities with credible growth potential and long-term value.">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config={theme:{extend:{colors:{navy:{950:'#071436',900:'#0C1D42',800:'#12264F',700:'#1A3160',600:'#223D70'},gold:{300:'#FFE17D',400:'#FFD966',500:'#F0C040',600:'#D4A843'}},animation:{'float':'float 6s ease-in-out infinite','pulse-slow':'pulse 4s ease-in-out infinite'},keyframes:{float:{'0%, 100%':{transform:'translateY(0)'},'50%':{transform:'translateY(-20px)'}}}}}}
@@ -32,18 +33,20 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
 <nav class="fixed top-0 w-full z-50 glass border-b border-gold-500/10">
   <div class="max-w-7xl mx-auto px-6 lg:px-8">
     <div class="flex justify-between items-center h-[72px]">
-      <a href="/" class="flex items-center gap-3"><img src="/src/logo.webp" alt="Griffin Global Commerce" class="h-12"></a>
+      <a href="/" class="flex items-center gap-3"><img src="/src/logo.png" alt="Griffin Global Commerce" class="h-10"></a>
       <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="md:hidden text-white/90" aria-label="Toggle navigation menu">
         <iconify-icon icon="solar:hamburger-menu-linear" width="24"></iconify-icon>
       </button>
       <div class="hidden md:flex items-center gap-8">
+        <a href="/" class="text-[13px] text-white/70 hover:text-gold-400 transition-colors font-medium">Home</a>
         <a href="/services/" class="text-[13px] text-white/70 hover:text-gold-400 transition-colors font-medium">Services</a>
         <a href="/about/" class="text-[13px] text-white/70 hover:text-gold-400 transition-colors font-medium">About</a>
         <a href="/investors/" class="text-[13px] text-white hover:text-gold-400 transition-colors font-medium">For Investors</a>
-        <a href="/contact/" class="bg-gradient-to-r from-gold-500 to-gold-400 text-navy-950 px-6 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase hover:shadow-lg hover:shadow-gold-500/20 transition-all">Contact Us</a>
+        <a href="/contact/" class="bg-gradient-to-r from-gold-500 to-gold-400 text-navy-950 px-6 py-2.5 rounded-md text-xs font-bold tracking-wider uppercase hover:shadow-lg hover:shadow-gold-500/20 transition-all">Contact Us</a>
       </div>
     </div>
     <div id="mobileMenu" class="hidden md:hidden pb-6 space-y-4">
+      <a href="/" class="block text-sm text-white/90 hover:text-gold-400">Home</a>
       <a href="/services/" class="block text-sm text-white/90 hover:text-gold-400">Services</a>
       <a href="/about/" class="block text-sm text-white/90 hover:text-gold-400">About</a>
       <a href="/investors/" class="block text-sm text-white/90 hover:text-gold-400">For Investors</a>
@@ -59,7 +62,7 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
   <div class="absolute inset-0 grid-bg opacity-40"></div>
   <div class="max-w-7xl mx-auto relative z-10 w-full">
     <div class="max-w-4xl">
-      <div class="inline-flex items-center gap-2 bg-gold-500/10 border border-gold-500/20 rounded-full px-4 py-1.5 mb-8">
+      <div class="inline-flex items-center gap-2 bg-gold-500/10 border border-gold-500/20 rounded-md px-4 py-1.5 mb-8">
         <span class="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse-slow"></span>
         <span class="text-gold-400 text-xs font-semibold tracking-wide uppercase">For Investors</span>
       </div>
@@ -69,7 +72,7 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
         <p>We review opportunities through a practical lens that considers market potential, commercial structure, execution capability, and strategic fit. Where alignment exists, we are open to discussions around collaboration, participation, and investment pathways.</p>
         <p>Our objective is to focus on opportunities that are thoughtful, scalable, and commercially grounded.</p>
       </div>
-      <a href="/contact/" class="group bg-gradient-to-r from-gold-500 to-gold-400 text-navy-950 px-8 py-4 rounded-full text-sm font-bold tracking-wider uppercase hover:shadow-xl hover:shadow-gold-500/20 transition-all inline-flex items-center gap-2">Contact Us to Learn More <iconify-icon icon="solar:arrow-right-linear" class="group-hover:translate-x-1 transition-transform"></iconify-icon></a>
+      <a href="/contact/" class="group bg-gradient-to-r from-gold-500 to-gold-400 text-navy-950 px-8 py-4 rounded-md text-sm font-bold tracking-wider uppercase hover:shadow-xl hover:shadow-gold-500/20 transition-all inline-flex items-center gap-2">Contact Us to Learn More <iconify-icon icon="solar:arrow-right-linear" class="group-hover:translate-x-1 transition-transform"></iconify-icon></a>
     </div>
   </div>
   <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-navy-950 to-transparent"></div>
@@ -94,25 +97,25 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
       </div>
       <div class="md:col-span-6">
         <div class="grid grid-cols-2 gap-4">
-          <div class="bg-navy-800/40 backdrop-blur rounded-2xl p-8 border border-white/5 card-glow group">
+          <div class="bg-navy-800/40 backdrop-blur rounded-xl p-8 border border-white/5 card-glow group">
             <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center mb-5 text-gold-400 group-hover:scale-110 transition-transform">
               <iconify-icon icon="solar:chart-2-bold" width="22"></iconify-icon>
             </div>
             <h3 class="text-sm font-bold text-white">Market Potential</h3>
           </div>
-          <div class="bg-navy-800/40 backdrop-blur rounded-2xl p-8 border border-white/5 card-glow group">
+          <div class="bg-navy-800/40 backdrop-blur rounded-xl p-8 border border-white/5 card-glow group">
             <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center mb-5 text-gold-400 group-hover:scale-110 transition-transform">
               <iconify-icon icon="solar:buildings-2-bold" width="22"></iconify-icon>
             </div>
             <h3 class="text-sm font-bold text-white">Business Structure</h3>
           </div>
-          <div class="bg-navy-800/40 backdrop-blur rounded-2xl p-8 border border-white/5 card-glow group">
+          <div class="bg-navy-800/40 backdrop-blur rounded-xl p-8 border border-white/5 card-glow group">
             <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center mb-5 text-gold-400 group-hover:scale-110 transition-transform">
               <iconify-icon icon="solar:settings-bold" width="22"></iconify-icon>
             </div>
             <h3 class="text-sm font-bold text-white">Execution Capability</h3>
           </div>
-          <div class="bg-navy-800/40 backdrop-blur rounded-2xl p-8 border border-white/5 card-glow group">
+          <div class="bg-navy-800/40 backdrop-blur rounded-xl p-8 border border-white/5 card-glow group">
             <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center mb-5 text-gold-400 group-hover:scale-110 transition-transform">
               <iconify-icon icon="solar:link-round-bold" width="22"></iconify-icon>
             </div>
@@ -127,17 +130,17 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
 <!-- Investor Closing -->
 <section class="py-32 px-6 lg:px-8">
   <div class="max-w-7xl mx-auto">
-    <div class="relative rounded-3xl overflow-hidden">
+    <div class="relative rounded-xl overflow-hidden">
       <div class="absolute inset-0 bg-gradient-to-br from-navy-700 via-navy-800 to-navy-900"></div>
       <div class="absolute inset-0 grid-bg opacity-20"></div>
       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold-500/[0.06] rounded-full blur-[150px]"></div>
       <div class="relative z-10 p-12 md:p-24 text-center">
-        <div class="inline-flex items-center gap-2 bg-gold-500/10 border border-gold-500/20 rounded-full px-4 py-1.5 mb-8">
+        <div class="inline-flex items-center gap-2 bg-gold-500/10 border border-gold-500/20 rounded-md px-4 py-1.5 mb-8">
           <span class="text-gold-400 text-xs font-semibold tracking-wide uppercase">Get in Touch</span>
         </div>
         <h2 class="display-font text-3xl md:text-5xl lg:text-6xl text-white tracking-tight mb-6">Interested in learning more?</h2>
         <p class="text-white/60 max-w-lg mx-auto mb-12 text-[15px] leading-relaxed">If you are an investor interested in discussing opportunities, strategic participation, or future collaboration, we welcome the conversation.</p>
-        <a href="/contact/" class="group bg-gradient-to-r from-gold-500 to-gold-400 text-navy-950 px-10 py-4 rounded-full text-sm font-bold tracking-wider uppercase hover:shadow-xl hover:shadow-gold-500/20 transition-all inline-flex items-center gap-2">Get in Touch <iconify-icon icon="solar:arrow-right-linear" class="group-hover:translate-x-1 transition-transform"></iconify-icon></a>
+        <a href="/contact/" class="group bg-gradient-to-r from-gold-500 to-gold-400 text-navy-950 px-10 py-4 rounded-md text-sm font-bold tracking-wider uppercase hover:shadow-xl hover:shadow-gold-500/20 transition-all inline-flex items-center gap-2">Get in Touch <iconify-icon icon="solar:arrow-right-linear" class="group-hover:translate-x-1 transition-transform"></iconify-icon></a>
       </div>
     </div>
   </div>
@@ -148,7 +151,7 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
   <div class="max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-12">
     <div class="grid md:grid-cols-4 gap-12 mb-16">
       <div class="md:col-span-1">
-        <img src="/src/logo.webp" alt="Griffin Global Commerce" class="h-12 mb-6">
+        <img src="/src/logo.png" alt="Griffin Global Commerce" class="h-10 mb-6">
         <p class="text-sm text-white/40 leading-relaxed mb-6">A Canadian business platform focused on growth, investment, crowdfunding, and market development.</p>
       </div>
       <div>
