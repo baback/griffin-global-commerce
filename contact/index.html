@@ -89,65 +89,74 @@ h1,h2,h3,h4,h5,h6,.display-font{font-family:'DM Sans',sans-serif}
 </section>
 
 <!-- Contact Form + Info -->
-<section class="py-20 px-6 lg:px-8">
-  <div class="max-w-5xl mx-auto">
-    <div class="grid md:grid-cols-5 gap-10">
-      <!-- Form -->
-      <div class="md:col-span-3">
-        <h2 class="display-font text-2xl text-white tracking-tight mb-6">Send us a message</h2>
-        <form action="https://api.spike.ac/f/9c4889/vfJTuYso" method="POST" class="space-y-5">
-          <div class="grid sm:grid-cols-2 gap-5">
+<section class="py-24 px-6 lg:px-8">
+  <div class="max-w-4xl mx-auto">
+    <!-- Form Card -->
+    <div class="relative">
+      <div class="absolute -inset-px bg-gradient-to-b from-gold-500/15 via-transparent to-transparent rounded-xl"></div>
+      <div class="relative bg-navy-800/40 backdrop-blur rounded-xl p-10 md:p-14 border border-white/5">
+        <div class="flex items-center gap-3 mb-8">
+          <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center text-gold-400">
+            <iconify-icon icon="solar:pen-new-round-bold" width="20"></iconify-icon>
+          </div>
+          <h2 class="display-font text-2xl text-white tracking-tight">Send us a message</h2>
+        </div>
+        <form action="https://api.spike.ac/f/9c4889/vfJTuY" method="POST" class="space-y-6">
+          <div class="grid sm:grid-cols-2 gap-6">
             <div>
-              <label for="name" class="block text-xs text-white/40 uppercase tracking-[0.15em] mb-2 font-medium">Name</label>
-              <input type="text" id="name" name="name" required class="w-full bg-navy-800/50 border border-white/10 rounded-md px-4 py-3 text-sm text-white placeholder-white/30 focus:outline-none focus:border-gold-500/40 focus:ring-1 focus:ring-gold-500/20 transition-all" placeholder="Your name">
+              <label for="name" class="block text-xs text-white/50 uppercase tracking-[0.15em] mb-2.5 font-medium">Full Name</label>
+              <input type="text" id="name" name="name" required class="w-full bg-navy-900/60 border border-white/8 rounded-lg px-5 py-3.5 text-sm text-white placeholder-white/25 focus:outline-none focus:border-gold-500/40 focus:bg-navy-900/80 transition-all" placeholder="John Smith">
             </div>
             <div>
-              <label for="email" class="block text-xs text-white/40 uppercase tracking-[0.15em] mb-2 font-medium">Email</label>
-              <input type="email" id="email" name="email" required class="w-full bg-navy-800/50 border border-white/10 rounded-md px-4 py-3 text-sm text-white placeholder-white/30 focus:outline-none focus:border-gold-500/40 focus:ring-1 focus:ring-gold-500/20 transition-all" placeholder="you@company.com">
+              <label for="email" class="block text-xs text-white/50 uppercase tracking-[0.15em] mb-2.5 font-medium">Email Address</label>
+              <input type="email" id="email" name="email" required class="w-full bg-navy-900/60 border border-white/8 rounded-lg px-5 py-3.5 text-sm text-white placeholder-white/25 focus:outline-none focus:border-gold-500/40 focus:bg-navy-900/80 transition-all" placeholder="you@company.com">
             </div>
           </div>
           <div>
-            <label for="subject" class="block text-xs text-white/40 uppercase tracking-[0.15em] mb-2 font-medium">Subject</label>
-            <input type="text" id="subject" name="subject" class="w-full bg-navy-800/50 border border-white/10 rounded-md px-4 py-3 text-sm text-white placeholder-white/30 focus:outline-none focus:border-gold-500/40 focus:ring-1 focus:ring-gold-500/20 transition-all" placeholder="How can we help?">
+            <label for="subject" class="block text-xs text-white/50 uppercase tracking-[0.15em] mb-2.5 font-medium">Subject</label>
+            <input type="text" id="subject" name="subject" class="w-full bg-navy-900/60 border border-white/8 rounded-lg px-5 py-3.5 text-sm text-white placeholder-white/25 focus:outline-none focus:border-gold-500/40 focus:bg-navy-900/80 transition-all" placeholder="How can we help?">
           </div>
           <div>
-            <label for="message" class="block text-xs text-white/40 uppercase tracking-[0.15em] mb-2 font-medium">Message</label>
-            <textarea id="message" name="message" rows="5" required class="w-full bg-navy-800/50 border border-white/10 rounded-md px-4 py-3 text-sm text-white placeholder-white/30 focus:outline-none focus:border-gold-500/40 focus:ring-1 focus:ring-gold-500/20 transition-all resize-none" placeholder="Tell us about your business or investment interest..."></textarea>
+            <label for="message" class="block text-xs text-white/50 uppercase tracking-[0.15em] mb-2.5 font-medium">Message</label>
+            <textarea id="message" name="message" rows="6" required class="w-full bg-navy-900/60 border border-white/8 rounded-lg px-5 py-3.5 text-sm text-white placeholder-white/25 focus:outline-none focus:border-gold-500/40 focus:bg-navy-900/80 transition-all resize-none" placeholder="Tell us about your business or investment interest..."></textarea>
           </div>
-          <button type="submit" class="group bg-gradient-to-r from-gold-500 to-gold-400 text-navy-950 px-8 py-4 rounded-md text-sm font-bold tracking-wider uppercase hover:shadow-xl hover:shadow-gold-500/20 transition-all inline-flex items-center gap-2">Send Message <iconify-icon icon="solar:arrow-right-linear" class="group-hover:translate-x-1 transition-transform"></iconify-icon></button>
+          <div class="flex items-center justify-between pt-2">
+            <p class="text-xs text-white/30 hidden sm:block">We typically respond within 24 hours.</p>
+            <button type="submit" class="group bg-gradient-to-r from-gold-500 to-gold-400 text-navy-950 px-10 py-4 rounded-md text-sm font-bold tracking-wider uppercase hover:shadow-xl hover:shadow-gold-500/20 transition-all inline-flex items-center gap-2 w-full sm:w-auto justify-center">Send Message <iconify-icon icon="solar:arrow-right-linear" class="group-hover:translate-x-1 transition-transform"></iconify-icon></button>
+          </div>
         </form>
       </div>
-      <!-- Info sidebar -->
-      <div class="md:col-span-2 space-y-6">
-        <div class="bg-navy-800/40 backdrop-blur rounded-xl p-8 border border-gold-500/10">
-          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center text-gold-400 mb-5">
-            <iconify-icon icon="solar:letter-bold" width="22"></iconify-icon>
-          </div>
-          <p class="text-xs text-white/40 uppercase tracking-[0.15em] mb-2 font-medium">Email</p>
-          <a href="mailto:info@griffingloballtd.ca" class="display-font text-lg text-white hover:text-gold-400 transition-colors break-all">info@griffingloballtd.ca</a>
-          <p class="text-xs text-white/40 mt-2">We respond within 24 hours</p>
+    </div>
+
+    <!-- Info Row -->
+    <div class="grid sm:grid-cols-3 gap-5 mt-10">
+      <a href="mailto:info@griffingloballtd.ca" class="bg-navy-800/30 rounded-xl p-6 border border-white/5 flex items-center gap-4 hover:border-gold-500/20 transition-all group">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center text-gold-400 shrink-0">
+          <iconify-icon icon="solar:letter-bold" width="18"></iconify-icon>
         </div>
-        <div class="bg-navy-800/40 backdrop-blur rounded-xl p-8 border border-gold-500/10">
-          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center text-gold-400 mb-5">
-            <iconify-icon icon="solar:map-point-bold" width="22"></iconify-icon>
-          </div>
-          <p class="text-xs text-white/40 uppercase tracking-[0.15em] mb-2 font-medium">Office</p>
-          <p class="text-[15px] text-white leading-relaxed">2030 Marine Dr<br>North Vancouver, BC<br>V7P 1V7, Canada</p>
+        <div class="min-w-0">
+          <p class="text-[10px] text-white/35 uppercase tracking-[0.15em] font-medium">Email</p>
+          <p class="text-sm text-white group-hover:text-gold-400 transition-colors truncate">info@griffingloballtd.ca</p>
         </div>
-        <a href="https://www.linkedin.com/company/griffin-global-commerce-ltd/" target="_blank" rel="noopener" class="bg-navy-800/40 backdrop-blur rounded-xl p-8 border border-white/5 flex items-center gap-4 hover:border-gold-500/25 transition-all group block">
-          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center text-gold-400 shrink-0 group-hover:scale-110 transition-transform">
-            <iconify-icon icon="mdi:linkedin" width="22"></iconify-icon>
-          </div>
-          <div>
-            <p class="text-xs text-white/40 uppercase tracking-[0.15em] mb-1 font-medium">LinkedIn</p>
-            <p class="text-sm text-white group-hover:text-gold-400 transition-colors">Follow us</p>
-          </div>
-        </a>
-        <div class="bg-navy-800/40 backdrop-blur rounded-xl p-6 border border-white/5 flex items-center gap-4">
-          <iconify-icon icon="solar:shield-check-bold" width="20" class="text-gold-400 shrink-0"></iconify-icon>
-          <p class="text-xs text-white/50">Registered Canadian Corporation · British Columbia</p>
+      </a>
+      <div class="bg-navy-800/30 rounded-xl p-6 border border-white/5 flex items-center gap-4">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center text-gold-400 shrink-0">
+          <iconify-icon icon="solar:map-point-bold" width="18"></iconify-icon>
+        </div>
+        <div>
+          <p class="text-[10px] text-white/35 uppercase tracking-[0.15em] font-medium">Office</p>
+          <p class="text-sm text-white">North Vancouver, BC</p>
         </div>
       </div>
+      <a href="https://www.linkedin.com/company/griffin-global-commerce-ltd/" target="_blank" rel="noopener" class="bg-navy-800/30 rounded-xl p-6 border border-white/5 flex items-center gap-4 hover:border-gold-500/20 transition-all group">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center text-gold-400 shrink-0">
+          <iconify-icon icon="mdi:linkedin" width="18"></iconify-icon>
+        </div>
+        <div>
+          <p class="text-[10px] text-white/35 uppercase tracking-[0.15em] font-medium">LinkedIn</p>
+          <p class="text-sm text-white group-hover:text-gold-400 transition-colors">Follow us</p>
+        </div>
+      </a>
     </div>
   </div>
 </section>
